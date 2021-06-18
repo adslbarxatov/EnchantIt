@@ -9,8 +9,8 @@ Extra abilities testing tool
 
 ## Description
 
-As you already understood, this is an unusual application. Its task is to *discover and mathematically confirm
-your ability to influence the surrounding reality not only by actions and words*. Yes, there is a theory that
+As you already understood, this is an unusual application. Its task is to _discover and mathematically confirm
+your ability to influence the surrounding reality not only by actions and words_. Yes, there is a theory that
 describes a very specific mechanism for registering such an influence, which we suggest you test.
 
 
@@ -31,20 +31,21 @@ of what can be called “witchcraft” in the past.
 
 Please note that this method is experimental! It is close to scientific, but for now it is not. Moreover, it has not
 yet been tested for the reliability of the results (if at all possible). Therefore, for the purity of the experiment:
-- start generation, being in the area of a stable WiFi and / or mobile network signal, where serious interruptions and
+- start generation, being in the *area of a stable WiFi and / or mobile network signal*, where serious interruptions and
 interference are not expected;
-- do not take the results (especially the first ones) as the ultimate truth and do not react to them too emotionally;
+- ~do not take the results (especially the first ones) as the ultimate truth and do not react to them too emotionally~;
 - share the results with colleagues and friends (the app has a built-in function) to understand the correctness /
 incorrectness of the testing method.
 
 
 The method is likely to change in future versions. In its current form, the lack of positive results will mean nothing.
-However, the emerging series of deviations in three or more episodes in a row, which can be easily tracked by the orange
+However, the _emerging series of deviations in three or more episodes in a row_, which can be easily tracked by the orange
 color of the indicator, will relatively reliably show some complex distortion of the electromagnetic field, which, even after
 the generation algorithm, leaves a trace in its operation. That is, your ability to influence it.
 
 In general, go for it! We really have no idea what the results of this experiment will be. Therefore, we hope for your
-feedback (comments on improving the method, results obtained, suggestions and bug reports) and maximum participation. Good luck, novice enchanters!
+feedback (comments on improving the method, results obtained, suggestions and bug reports) and maximum participation.
+Good luck, novice enchanters!
 
 #
 
