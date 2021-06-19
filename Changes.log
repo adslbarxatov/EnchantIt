@@ -1,0 +1,11 @@
+EnchantIt changes log:
+
+Version 1.1b:
+• Fixed signal scale’s orientation in PRNG;
+• Fix language selection failure;
+• Implemented “soft” scale movement;
+• Added pre-launch tip;
+• Added dynamic color for generator scale
+
+Version 1.1:
+• Initial version
