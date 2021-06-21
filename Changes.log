@@ -1,5 +1,20 @@
 EnchantIt changes log:
 
+Version 1.2:
+• Implemented RN generation method based on kernel entropy (selectable option)
+
+Version 1.1d:
+• Fixed some edge troubles with seed retrieving algorithm;
+• Fixed some interface elements
+
+Version 1.1c:
+• Updated text of user manual;
+• Added links to video presentation and complete method description;
+• Results now can be submitted to the laboratory with the bug/wish report;
+• Seed evaluation method now better fits the dBm range;
+• Seed value removed from results field;
+• Results field now supports up to 30 lines
+
 Version 1.1b:
 • Fixed signal scale’s orientation in PRNG;
 • Fix language selection failure;

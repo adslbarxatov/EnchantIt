@@ -1,4 +1,4 @@
-# EnchantIt v 1.1
+# EnchantIt v 1.2
 
 
 Extra abilities testing tool
@@ -9,44 +9,48 @@ Extra abilities testing tool
 
 ## Description
 
-As you already understood, this is an unusual application. Its task is to _discover and mathematically confirm
-your ability to influence the surrounding reality not only by actions and words_. Yes, there is a theory that
-describes a very specific mechanism for registering such an influence, which we suggest you test.
+As you already understood, this is an unusual application. Its task is to _discover and mathematically
+confirm your ability to influence the surrounding reality not only by actions and words_. Yes, there
+is a theory that describes a very specific mechanism for registering such an influence, which we suggest you test.
 
-
-A detailed methodological and physical-mathematical description of this implementation will be available a little
-later on this page. In short:
+A detailed methodological and physical-mathematical description of this implementation and the project
+presentation are available above. In short:
 - the theory suggests that brain activity (primarily emotional) can distort the electromagnetic fields existing around us;
-- generators of random numbers working on the basis of such fields can perceive these distortions, which will affect the
-results of their work; moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
+- generators of random numbers working on the basis of such fields can perceive these distortions,
+which will affect the results of their work; moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
 - registration of RNG readings for some time can show significant deviations from the norm and link them to any events.
 
+This application uses the strength of mobile signal and / or WiFi or the entropy of operating system
+kernel (“noise” of the processor and timer, fluctuations in the speed of network packets and core
+temperature) as an indicator of severe disturbances in surrounding electromagnetic field. Based on them,
+it generates a series of random numbers.
 
-This application uses the strength of the mobile signal and / or WiFi as an indicator of severe disturbances in the
-surrounding electromagnetic field, generates a series of random numbers. Normally, the average value in such series
-should be close to the middle of the range of possible values (you will see it on the slider). The app will mark and
-accumulate major deviations from the middle, noting when they occurred. This will help you understand if you are capable
-of what can be called “witchcraft” in the past.
+Normally, the average value in such series should be close to the middle of range of possible values
+(you will see it on the slider). The app will catch and accumulate major deviations from the middle,
+noting when they occurred. This will help you understand if you are capable of what can be called “witchcraft” in the past.
 
-
-Please note that this method is experimental! It is close to scientific, but for now it is not. Moreover, it has not
-yet been tested for the reliability of the results (if at all possible). Therefore, for the purity of the experiment:
-- start generation, being in the *area of a stable WiFi and / or mobile network signal*, where serious interruptions and
-interference are not expected;
+Please note that this _method is experimental_! It is close to scientific, but it is not. Moreover,
+it has not yet been tested for the reliability of the results (if at all possible). Therefore, for the purity of the experiment:
+- start generation, being in the area of a stable WiFi signal and / or mobile network, where serious
+interruptions and interference are not expected; for the method based on the OS kernel entropy, this
+means the absence of extraneous aggressive radiation;
 - ***do not take the results (especially the first ones) as the ultimate truth and do not react to them too emotionally***;
 - ***do not try to use violence against your device – it will do nothing but break it***;
-- share the results with colleagues and friends (the app has a built-in function) to understand the correctness /
-incorrectness of the testing method.
+- share the results with colleagues and friends (the app has a built-in function) to understand the
+correctness / incorrectness of the testing method.
 
+In the current form of the method, ***an absence of positive results doesn’t mean anything***. However, ***their
+presence relatively reliably shows some complex distortion of electromagnetic field, which, even after
+the generation algorithm, leaves a trace in its operation***. That is, your ability to influence it.
 
-The method is likely to change in future versions. In its current form, the lack of positive results will mean nothing.
-However, the _emerging series of deviations in three or more episodes in a row_, which can be easily tracked by the orange
-color of the indicator, will relatively reliably show some complex distortion of the electromagnetic field, which, even after
-the generation algorithm, leaves a trace in its operation. That is, your ability to influence it.
+The test can be considered successfully passed if the ***slider is shifted to the left by a noticeable
+distance (the scale will change its color to orange) for three or more seconds in a row***. This can happen
+as a result of a high degree of concentration on it, and under the influence of strong emotions of
+a person who is near the device. Try different options – one of them may give the desired effect.
 
-In general, go for it! We really have no idea what the results of this experiment will be. Therefore, we hope for your
-feedback (comments on improving the method, results obtained, suggestions and bug reports) and maximum participation.
-Good luck, novice enchanters!
+In general, go for it! We really have no idea what the results of this experiment will be. Therefore,
+we hope for your feedback (comments on improving the method, results obtained, suggestions and bug reports)
+and maximum participation. Good luck, novice enchanters!
 
 #
 
