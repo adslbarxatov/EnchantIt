@@ -29,7 +29,7 @@ Normally, the average value in such series should be close to the middle of rang
 (you will see it on the slider). The app will catch and accumulate major deviations from the middle,
 noting when they occurred. This will help you understand if you are capable of what can be called “witchcraft” in the past.
 
-Please note that this **method is experimental**! It is close to scientific, but it is not. Moreover,
+Please note that this ***method is experimental***! It is close to scientific, but it is not. Moreover,
 it has not yet been tested for the reliability of the results (if at all possible). Therefore, for the purity of the experiment:
 - start generation, being in the area of a stable WiFi signal and / or mobile network, where serious
 interruptions and interference are not expected; for the method based on the OS kernel entropy, this
@@ -78,7 +78,7 @@ and maximum participation. Good luck, novice enchanters!
 (Вы увидите его на бегунке). Приложение будет ловить и накапливать серьёзные отклонения от середины,
 отмечая время их возникновения. Так Вы сможете понять, способны ли Вы к тому, что раньше бы назвали «колдовством».
 
-Обращаем внимание, что **метод экспериментальный**! Он близок к научному, но не является таковым.
+Обращаем внимание, что ***метод экспериментальный***! Он близок к научному, но не является таковым.
 Более того, он ещё не проходил тестирование на надёжность результатов (если такое вообще возможно).
 Поэтому, для чистоты эксперимента:
 - запускайте генерацию, находясь в зоне стабильного сигнала WiFi и/или мобильной сети, где не ожидается
