@@ -1,4 +1,4 @@
-# EnchantIt v 1.2
+# EnchantIt v 1.3
 
 
 Extra abilities testing tool
@@ -20,7 +20,7 @@ A detailed [methodological and physical-mathematical description](https://vk.com
 which will affect the results of their work; moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
 - registration of RNG readings for some time can show significant deviations from the norm and link them to any events.
 
-This application uses the strength of mobile signal and / or WiFi or the entropy of operating system
+This application uses the strength of WiFi signal or the entropy of operating system
 kernel (“noise” of the processor and timer, fluctuations in the speed of network packets and core
 temperature) as an indicator of severe disturbances in surrounding electromagnetic field. Based on them,
 it generates a series of random numbers.
@@ -31,7 +31,7 @@ noting when they occurred. This will help you understand if you are capable of w
 
 Please note that this ***method is experimental***! It is close to scientific, but it is not. Moreover,
 it has not yet been tested for the reliability of the results (if at all possible). Therefore, for the purity of the experiment:
-- start generation, being in the area of a stable WiFi signal and / or mobile network, where serious
+- start generation, being in the area of a stable WiFi signal, where serious
 interruptions and interference are not expected; for the method based on the OS kernel entropy, this
 means the absence of extraneous aggressive radiation;
 - ***do not take the results (especially the first ones) as the ultimate truth and do not react to them too emotionally***;
@@ -70,7 +70,7 @@ and maximum participation. Good luck, novice enchanters!
 - регистрация показаний ГСЧ в течение некоторого времени может показать значительные отклонения от
 нормы и привязать их к каким-либо событиям.
 
-Данное приложение использует силу сигнала мобильной связи и/или WiFi или энтропию ядра операционной
+Данное приложение использует силу сигнала WiFi или энтропию ядра операционной
 системы («шум» процессора и таймера, колебания скорости сетевых пакетов и температуры ядра) в качестве
 индикатора серьёзных возмущений окружающего электромагнитного поля. На их основе оно генерирует ряды случайных чисел.
 
@@ -81,7 +81,7 @@ and maximum participation. Good luck, novice enchanters!
 Обращаем внимание, что ***метод экспериментальный***! Он близок к научному, но не является таковым.
 Более того, он ещё не проходил тестирование на надёжность результатов (если такое вообще возможно).
 Поэтому, для чистоты эксперимента:
-- запускайте генерацию, находясь в зоне стабильного сигнала WiFi и/или мобильной сети, где не ожидается
+- запускайте генерацию, находясь в зоне стабильного сигнала WiFi, где не ожидается
 серьёзных перебоев и помех; для метода на базе энтропии ядра ОС это означает отсутствие посторонних агрессивных излучений;
 - ***не воспринимайте результаты (особенно – первые) как истину в последней инстанции и не реагируйте на них слишком эмоционально***;
 - ***не пытайтесь применять насилие к Вашему устройству – это ничего не даст кроме его поломки***;
@@ -107,12 +107,12 @@ and maximum participation. Good luck, novice enchanters!
 ## Requirements / Требования
 
 - [Android version](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) requires OS 6.0 or newer. Interface languages: ru_ru, en_us;
-- Application ***will be*** available in AppGallery
+- Application also available in AppGallery
 
 #
 
 - Для [Android-версии](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) требуется ОС версии 6.0 или новее. Языки интерфейса: ru_ru, en_us;
-- Приложение ***будет*** доступно в AppGallery
+- Приложение также доступно в AppGallery
 
 &nbsp;
 

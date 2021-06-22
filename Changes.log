@@ -1,5 +1,12 @@
 EnchantIt changes log:
 
+Version 1.3:
+• The app can now group series of results that go in a row;
+• Results field now supports up to 50 lines;
+• Added ability to change count of scales;
+• Added the night mode;
+• Cell network support has been disabled
+
 Version 1.2:
 • Implemented RN generation method based on kernel entropy (selectable option)
 
