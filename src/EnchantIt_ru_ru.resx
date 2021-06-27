@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPage" xml:space="preserve">
+    <value>О приложении</value>
+  </data>
+  <data name="AcceptButton" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="ADPPage" xml:space="preserve">
+    <value>Политика и EULA</value>
+  </data>
+  <data name="AppPage" xml:space="preserve">
+    <value>Страница проекта</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="CommunitySelect" xml:space="preserve">
+    <value>Выберите сообщество:</value>
+  </data>
+  <data name="CommunityTG" xml:space="preserve">
+    <value>Телеграм</value>
+  </data>
+  <data name="CommunityVK" xml:space="preserve">
+    <value>ВКонтакте</value>
+  </data>
+  <data name="ConnectionLost" xml:space="preserve">
+    <value>WiFi недоступен. Генерация была прервана</value>
+  </data>
+  <data name="DeclineButton" xml:space="preserve">
+    <value>Читать</value>
+  </data>
+  <data name="DevMessage" xml:space="preserve">
+    <value>Отправляя письмо разработчику, Вы деанонимизируете свой E-mail!
+
+Кроме того, в черновик письма будут включены Ваши результаты. Не забудьте удалить их, если Вы не планируете их сообщать.
+
+Хотите продолжить?</value>
+  </data>
+  <data name="DevPage" xml:space="preserve">
+    <value>Спросить разработчика</value>
+  </data>
+  <data name="EmailsAreUnavailable" xml:space="preserve">
+    <value>Почтовый агент отсутствует на этом устройстве</value>
+  </data>
+  <data name="HiResults" xml:space="preserve">
+    <value>Экстраординарные результаты:</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>И снова здравствуйте. Как вы уже поняли, это – необычное приложение. Его задача – обнаружить и математически подтвердить наличие у Вас способности влиять на окружающую действительность не только действиями и словами. Да, существует теория, которая описывает вполне конкретный механизм регистрации такого влияния, который мы и предлагаем Вам испытать.
+
+
+Подробное методическое и физико-математическое описание этой реализации и презентация проекта доступны выше. Если коротко:
+
+• теория предполагает, что активность мозга (прежде всего – эмоциональная) может вносить искажения в существующие вокруг нас электромагнитные поля;
+
+• работающие на основе таких полей генераторы случайных чисел могут воспринимать эти искажения, что отразится на результатах их работы; причём, ввиду сложности алгоритма генерации такое воздействие сложно подделать;
+
+• регистрация показаний ГСЧ в течение некоторого времени может показать значительные отклонения от нормы и привязать их к каким-либо событиям.
+
+
+Данное приложение использует силу сигнала WiFi или энтропию ядра операционной системы («шум» процессора и таймера, колебания скорости сетевых пакетов и температуры ядра) в качестве индикатора серьёзных возмущений окружающего электромагнитного поля. На их основе оно генерирует ряды случайных чисел.
+
+
+В норме среднее значение в таких рядах должно быть близко к середине диапазона возможных вариантов (Вы увидите его на бегунке). Приложение будет ловить и накапливать серьёзные отклонения от середины, отмечая время их возникновения. Так Вы сможете понять, способны ли Вы к тому, что раньше бы назвали «колдовством».
+
+
+Обращаем внимание, что метод экспериментальный! Он близок к научному, но не является таковым. Более того, он ещё не проходил тестирование на надёжность результатов (если такое вообще возможно). Поэтому, для чистоты эксперимента:
+
+• запускайте генерацию, находясь в зоне стабильного сигнала WiFi, где не ожидается серьёзных перебоев и помех; для метода на базе энтропии ядра ОС это означает отсутствие посторонних агрессивных излучений;
+
+• не воспринимайте результаты (особенно – первые) как истину в последней инстанции и не реагируйте на них слишком эмоционально;
+
+• не пытайтесь применять насилие к Вашему устройству – это ничего не даст кроме его поломки;
+
+• делитесь результатами с коллегами и друзьями (приложение имеет встроенную функцию) для понимания корректности метода тестирования.
+
+
+В текущем виде метода отсутствие положительных результатов не говорит ни о чём. Однако их наличие относительно надёжно показывает некое сложное искажение электромагнитного поля, которое даже после алгоритма генерации оставляет след в его работе. То есть, Вашу способность воздействовать на него.
+
+
+Тест можно считать успешно пройденным, если бегунок окажется сдвинутым влево на заметное расстояние (шкала при этом поменяет цвет на оранжевый) три и более секунды подряд. Это может случиться как в результате высокой степени концентрации на нём, так и под действием сильных эмоций человека, находящегося рядом с устройством. Пробуйте различные варианты – какой-то из них может дать требуемый эффект.
+
+
+В общем, дерзайте! Мы действительно не имеем ни малейшего понятия, какими будут результаты этого эксперимента. Поэтому надеемся на Вашу обратную связь (комментарии по улучшению метода, полученные результаты, предложения и сообщения о проблемах) и максимальное участие. Удачи Вам, начинающие чародеи!
+
+Для начала эксперимента смахните этот экран вправо</value>
+  </data>
+  <data name="KernelMethod" xml:space="preserve">
+    <value>Ядро: </value>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Язык интерфейса:</value>
+  </data>
+  <data name="ManualPage" xml:space="preserve">
+    <value>Презентация проекта</value>
+  </data>
+  <data name="MethodCore" xml:space="preserve">
+    <value>Метод, основанный на энтропии ядра ОС</value>
+  </data>
+  <data name="MethodPage" xml:space="preserve">
+    <value>Полное описание</value>
+  </data>
+  <data name="MethodSelect" xml:space="preserve">
+    <value>Выберите метод генерации случайных чисел:</value>
+  </data>
+  <data name="MethodWifi" xml:space="preserve">
+    <value>Стандартный метод на базе сигнала WiFi</value>
+  </data>
+  <data name="NextButton" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="PolicyMessage" xml:space="preserve">
+    <value>Перед началом работы с этим инструментом Вы должны принять Политику разработки приложений и Пользовательское соглашение. Хотите открыть их тексты в браузере?
+
+• Нажмите «Принять», если Вы уже ознакомились и полностью приняли их;
+• Нажмите «Читать», если хотите открыть их в браузере;
+• Чтобы отклонить их, закройте приложение</value>
+  </data>
+  <data name="RestartApp" xml:space="preserve">
+    <value>Перезапустите приложение</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Выберите язык:</value>
+  </data>
+  <data name="SolutionPage" xml:space="preserve">
+    <value>Состояние генератора</value>
+  </data>
+  <data name="Tip00" xml:space="preserve">
+    <value>Вас приветствует инструмент тестирования «экстраординарных» способностей!
+
+Пожалуйста, ознакомьтесь с описанием и пояснениями на этой странице приложения перед началом тестирования для лучшего понимания принципа работы инструмента и сути эксперимента</value>
+  </data>
+  <data name="WebIsUnavailable" xml:space="preserve">
+    <value>Веб-браузер отсутствует на этом устройстве</value>
+  </data>
+  <data name="WiFiMethod" xml:space="preserve">
+    <value>WiFi: </value>
+  </data>
+</root>

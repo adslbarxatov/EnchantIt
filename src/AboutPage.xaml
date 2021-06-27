@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RD_AAOW.AboutPage">
+
+	<StackLayout>
+		<Label x:Name="HeaderLabel" />
+
+		<ScrollView>
+			<StackLayout>
+
+				<Label x:Name="AboutLabel" />
+				<BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="1" 
+					WidthRequest="200" Color="#606060" Margin="9" />
+
+				<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+					<Label x:Name="LanguageLabel" VerticalOptions="Center" />
+					<Button x:Name="LanguageSelector" />
+				</StackLayout>
+
+				<FlexLayout JustifyContent="Center" Direction="Row" Wrap="Wrap">
+					<Button x:Name="MethodPage" HorizontalOptions="Center" />
+					<Button x:Name="ManualPage" HorizontalOptions="Center" />
+				</FlexLayout>
+
+				<BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="1" 
+					WidthRequest="200" Color="#606060" Margin="9" />
+
+				<FlexLayout JustifyContent="Center" Direction="Row" Wrap="Wrap">
+					<Button x:Name="AppPage" HorizontalOptions="Center" />
+					<Button x:Name="ADPPage" HorizontalOptions="Center" />
+					<Button x:Name="DevPage" HorizontalOptions="Center" />
+					<Button x:Name="CommunityPage" HorizontalOptions="Center" />
+				</FlexLayout>
+
+				<BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="1" 
+					WidthRequest="200" Color="#606060" Margin="9" />
+
+				<Label x:Name="InstructionsField" />
+
+				<Label />
+
+			</StackLayout>
+		</ScrollView>
+
+	</StackLayout>
+</ContentPage>
+    

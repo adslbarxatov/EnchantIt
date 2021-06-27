@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--package="enchantit.huawei" package="com.RD_AAOW.EnchantIt"-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="enchantit.huawei"
+		android:installLocation="internalOnly" android:versionCode="600108" android:versionName="1.3.1">
+
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30" />
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<application android:label="Enchant it" android:icon="@mipmap/icon"></application>
+</manifest>
