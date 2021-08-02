@@ -1,4 +1,4 @@
-# EnchantIt v 1.3.1
+# EnchantIt v 1.4
 
 
 Extra abilities testing tool
