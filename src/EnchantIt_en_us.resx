@@ -132,6 +132,11 @@
   <data name="CancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="CertNameHelp" xml:space="preserve">
+    <value>Enter the name of certificate's owner.
+
+WARNING! This name cannot be changed without the application reinstallation. Please, enter the name accurately (not less than 3 letters). This information will not leave this device</value>
+  </data>
   <data name="CommunitySelect" xml:space="preserve">
     <value>Select community:</value>
   </data>
@@ -236,6 +241,12 @@ Swipe this screen to the right to start the experiment</value>
   </data>
   <data name="RestartApp" xml:space="preserve">
     <value>Restart the application</value>
+  </data>
+  <data name="SaveFileFailure" xml:space="preserve">
+    <value>Failed to save certificate. Allow the application to write to device storage and try again</value>
+  </data>
+  <data name="SaveFileSuccess" xml:space="preserve">
+    <value>The certificate is saved in downloads folder</value>
   </data>
   <data name="SelectLanguage" xml:space="preserve">
     <value>Select language:</value>

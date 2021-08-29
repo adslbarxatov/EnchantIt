@@ -132,6 +132,11 @@
   <data name="CancelButton" xml:space="preserve">
     <value>Отмена</value>
   </data>
+  <data name="CertNameHelp" xml:space="preserve">
+    <value>Введите имя владельца сертификата.
+
+ПРЕДУПРЕЖДЕНИЕ! Это имя нельзя изменить без переустановки приложения. Пожалуйста, введите имя правильно (не менее трёх букв). Эта информация не покинет данное устройство</value>
+  </data>
   <data name="CommunitySelect" xml:space="preserve">
     <value>Выберите сообщество:</value>
   </data>
@@ -236,6 +241,12 @@
   </data>
   <data name="RestartApp" xml:space="preserve">
     <value>Перезапустите приложение</value>
+  </data>
+  <data name="SaveFileFailure" xml:space="preserve">
+    <value>Не удалось сохранить сертификат. Разрешите приложению запись в память устройства и повторите попытку</value>
+  </data>
+  <data name="SaveFileSuccess" xml:space="preserve">
+    <value>Сертификат сохранён в папку загрузок</value>
   </data>
   <data name="SelectLanguage" xml:space="preserve">
     <value>Выберите язык:</value>

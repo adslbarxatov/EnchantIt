@@ -31,8 +31,21 @@ namespace RD_AAOW.Droid
 
 			base.OnCreate (savedInstanceState);
 			global::Xamarin.Forms.Forms.Init (this, savedInstanceState);
+			global::Xamarin.Essentials.Platform.Init (this, savedInstanceState);
+
 			this.Window.AddFlags (WindowManagerFlags.KeepScreenOn); // Запрет на переход в ждущий режим
 			LoadApplication (new App ());
+			}
+
+		/// <summary>
+		/// Запрос разрешений для приложения
+		/// </summary>
+		public override void OnRequestPermissionsResult (int requestCode, string[] permissions,
+			Android.Content.PM.Permission[] grantResults)
+			{
+			Xamarin.Essentials.Platform.OnRequestPermissionsResult (requestCode, permissions, grantResults);
+
+			base.OnRequestPermissionsResult (requestCode, permissions, grantResults);
 			}
 		}
 

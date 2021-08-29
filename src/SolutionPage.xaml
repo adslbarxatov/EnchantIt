@@ -31,7 +31,11 @@
 				<Label />
 
 				<Label x:Name="Results" HorizontalOptions="Center" />
-				<Button x:Name="ShareResults" HorizontalOptions="Center" />
+
+				<StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+					<Button x:Name="ShareResults" HorizontalOptions="Center" />
+					<Button x:Name="Certificate" HorizontalOptions="Center" />
+				</StackLayout>
 
 				<Label />
 

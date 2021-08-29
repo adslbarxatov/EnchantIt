@@ -1,5 +1,12 @@
 EnchantIt changes log:
 
+Version 1.5:
+• Application is now able to generate certificates for everyone who has passed the test
+  (got 3 or more extra results in a row). Extra results are the values below 49.1.
+  Those certificates have checkable image and unique number. So, it is possible to
+  recognize fake ones. This option is now unavailable for Android 10 and newer
+• Adjusted kernel generation method. Now it is the primary one
+
 Version 1.4.1:
 • Updated link and text presenter for ADP
 
