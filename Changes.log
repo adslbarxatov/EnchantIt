@@ -1,5 +1,9 @@
 EnchantIt changes log:
 
+Version 1.5.1:
+• Certificates generation is now available on Android 10 and newer;
+• Some interface fixes applied
+
 Version 1.5:
 • Application is now able to generate certificates for everyone who has passed the test
   (got 3 or more extra results in a row). Extra results are the values below 49.1.
