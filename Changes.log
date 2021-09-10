@@ -1,5 +1,9 @@
 EnchantIt changes log:
 
+Version 1.5.2:
+• Changed results indication: now all negative values are extraordinary. This variant
+  seems more obvious than previous one
+
 Version 1.5.1:
 • Certificates generation is now available on Android 10 and newer;
 • Some interface fixes applied
