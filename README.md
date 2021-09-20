@@ -1,7 +1,7 @@
 # EnchantIt v 1.5.2
 
 
-Extraordinary abilities searching tool
+Extraordinary abilities search tool
 
 Инструмент поиска экстраординарных способностей
 
