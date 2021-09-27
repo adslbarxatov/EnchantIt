@@ -252,7 +252,7 @@
     <value>Выберите язык:</value>
   </data>
   <data name="SolutionPage" xml:space="preserve">
-    <value>Состояние генератора</value>
+    <value>Состояние и результаты теста</value>
   </data>
   <data name="Tip00" xml:space="preserve">
     <value>Вас приветствует инструмент тестирования «экстраординарных» способностей!

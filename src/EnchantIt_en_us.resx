@@ -252,7 +252,7 @@ Swipe this screen to the right to start the experiment</value>
     <value>Select language:</value>
   </data>
   <data name="SolutionPage" xml:space="preserve">
-    <value>Generator status</value>
+    <value>Test status and results</value>
   </data>
   <data name="Tip00" xml:space="preserve">
     <value>Welcome to the “extraordinary” abilities testing tool!

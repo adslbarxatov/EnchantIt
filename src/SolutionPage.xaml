@@ -3,44 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RD_AAOW.SolutionPage">
 
-	<StackLayout >
+	<StackLayout>
 		<Label x:Name="HeaderLabel" VerticalOptions="Start"/>
 
-		<ScrollView >
+		<!-- Управление -->
+		<StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+			<Button x:Name="Start" />
+			<Button x:Name="Stop" />
+
+			<Button x:Name="Method" />
+			<Button x:Name="NightMode" />
+			<Button x:Name="ScalesCount" />
+		</StackLayout>
+
+		<!-- Шкалы -->
+		<Label x:Name="Measure" HorizontalOptions="Center" />
+
+		<Label x:Name="Space01" />
+
+		<ProgressBar x:Name="Scale1" HorizontalOptions="Fill" />
+		<ProgressBar x:Name="Scale2" HorizontalOptions="Fill" />
+		<ProgressBar x:Name="Scale3" HorizontalOptions="Fill" />
+
+		<Label x:Name="Space02" />
+
+		<!-- Результаты -->
+		<ScrollView>
 			<StackLayout>
-
-				<StackLayout HorizontalOptions="Center" Orientation="Horizontal">
-					<Button x:Name="Start" />
-					<Button x:Name="Stop" />
-
-					<Button x:Name="Method" />
-					<Button x:Name="NightMode" />
-					<Button x:Name="ScalesCount" />
-				</StackLayout>
-
-				<Label x:Name="Measure" HorizontalOptions="Center" />
-
-				<Label />
-				<Label />
-
-				<ProgressBar x:Name="Scale1" HorizontalOptions="Fill" />
-				<ProgressBar x:Name="Scale2" HorizontalOptions="Fill" />
-				<ProgressBar x:Name="Scale3" HorizontalOptions="Fill" />
-
-				<Label />
-				<Label />
-
 				<Label x:Name="Results" HorizontalOptions="Center" />
-
-				<StackLayout HorizontalOptions="Center" Orientation="Horizontal">
-					<Button x:Name="ShareResults" HorizontalOptions="Center" />
-					<Button x:Name="Certificate" HorizontalOptions="Center" />
-				</StackLayout>
-
-				<Label />
-
 			</StackLayout>
 		</ScrollView>
 
-	</StackLayout>
+		<StackLayout HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="Center">
+			<Button x:Name="ShareResults" HorizontalOptions="Center" />
+			<Button x:Name="Certificate" HorizontalOptions="Center" />
+		</StackLayout>
+
+	</StackLayout >
 </ContentPage>
