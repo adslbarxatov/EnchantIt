@@ -1,7 +1,14 @@
 EnchantIt changes log:
 
+Version 1.6:
+• Upgraded detection algorithm: now it makes summas of series of declinations from normal
+  distribution and compares them with factor (~500 points);
+• Improved user interface;
+• Removed bars quantity button as unused;
+• Certificates of versions below 1.6 have been invalidated
+
 Version 1.5.4:
-• Android: updated Xamarin support packages;
+• Updated Xamarin support packages;
 • Updated link for ADP
 
 Version 1.5.3:

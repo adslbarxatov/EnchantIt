@@ -13,7 +13,6 @@
 
 			<Button x:Name="Method" />
 			<Button x:Name="NightMode" />
-			<Button x:Name="ScalesCount" />
 		</StackLayout>
 
 		<!-- Шкалы -->
@@ -21,9 +20,11 @@
 
 		<Label x:Name="Space01" />
 
+		<ProgressBar x:Name="FactorScale1" HorizontalOptions="Fill" />
 		<ProgressBar x:Name="Scale1" HorizontalOptions="Fill" />
 		<ProgressBar x:Name="Scale2" HorizontalOptions="Fill" />
 		<ProgressBar x:Name="Scale3" HorizontalOptions="Fill" />
+		<ProgressBar x:Name="FactorScale2" HorizontalOptions="Fill" />
 
 		<Label x:Name="Space02" />
 
