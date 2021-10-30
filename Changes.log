@@ -5,7 +5,7 @@ Version 1.6:
   distribution and compares them with factor (~500 points);
 • Improved user interface;
 • Removed bars quantity button as unused;
-• Certificates of versions below 1.6 have been invalidated
+• Added isolated release of Android application in APK format to temporarily replace Google play
 
 Version 1.5.4:
 • Updated Xamarin support packages;

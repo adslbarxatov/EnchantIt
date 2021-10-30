@@ -16,7 +16,7 @@ namespace RD_AAOW.Droid
 	/// <summary>
 	/// Класс описывает загрузчик приложения
 	/// </summary>
-	[Activity (Label = "Enchant it", Icon = "@mipmap/icon", Theme = "@style/MainTheme",
+	[Activity (Label = "Enchant it | GH", Icon = "@mipmap/icon", Theme = "@style/MainTheme",
 		ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity: global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 		{
