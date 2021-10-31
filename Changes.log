@@ -1,6 +1,6 @@
 EnchantIt changes log:
 
-Version 1.6:
+Version 1.6.17:
 • Upgraded detection algorithm: now it makes summas of series of declinations from normal
   distribution and compares them with factor (~500 points);
 • Improved user interface;

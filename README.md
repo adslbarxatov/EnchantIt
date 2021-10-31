@@ -1,4 +1,4 @@
-# EnchantIt v 1.6
+# EnchantIt v 1.6.17
 
 
 Extraordinary abilities search tool
