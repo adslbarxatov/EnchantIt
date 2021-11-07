@@ -143,8 +143,8 @@ WARNING! This name cannot be changed without the application reinstallation. Ple
   <data name="CommunityTG" xml:space="preserve">
     <value>Telegram feed</value>
   </data>
-  <data name="CommunityVK" xml:space="preserve">
-    <value>Main community</value>
+  <data name="CommunityWelcome" xml:space="preserve">
+    <value>Welcome page</value>
   </data>
   <data name="ConnectionLost" xml:space="preserve">
     <value>WiFi connection is unavailable. Generation has been interrupted</value>
@@ -258,6 +258,11 @@ Swipe this screen to the right to start the experiment</value>
     <value>Welcome to the “extraordinary” abilities testing tool!
 
 Please read the description and explanations on this page of the app before starting testing for a better understanding of how the tool works and the essence of the experiment</value>
+  </data>
+  <data name="Tip01" xml:space="preserve">
+    <value>Congratulations! It looks like you do have some “paranormal” abilities!
+
+Now you can get a certificate confirming this – the corresponding button is available at the bottom of this screen. However, to exclude a possible accidental triggering, we recommend continuing to participate in the experiment to increase the reliability of your result. All new achievements will also be added to your certificate</value>
   </data>
   <data name="WebIsUnavailable" xml:space="preserve">
     <value>This device has no web browser</value>
