@@ -1,4 +1,4 @@
-# EnchantIt v 1.6.18
+# EnchantIt v 1.7
 
 
 Extraordinary abilities search tool
@@ -14,7 +14,7 @@ confirm your ability to influence the surrounding reality not only by actions an
 is a theory that describes a very specific mechanism for registering such an influence, which we suggest you test.
 
 A detailed [methodological and physical-mathematical description](https://vk.com/@rd_aaow_fdl-enchantit) of this implementation and the
-[project presentation](https://youtu.be/wSYtWe0xW4g) are available by links. In short:
+[project presentation](https://youtu.be/2t9iZDTnWg4) are available by links. In short:
 - the theory suggests that brain activity (primarily emotional) can distort the electromagnetic fields existing around us;
 - generators of random numbers working on the basis of such fields can perceive these distortions,
 which will affect the results of their work; moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
@@ -62,7 +62,7 @@ and maximum participation. Good luck, novice enchanters!
 мы и предлагаем Вам испытать.
 
 Подробное [методическое и физико-математическое описание](https://vk.com/@rd_aaow_fdl-enchantit) этой реализации
-и [презентация проекта](https://youtu.be/wSYtWe0xW4g) доступны по ссылкам. Если коротко:
+и [презентация проекта](https://youtu.be/2t9iZDTnWg4) доступны по ссылкам. Если коротко:
 - теория предполагает, что активность мозга (прежде всего – эмоциональная) может вносить искажения
 в существующие вокруг нас электромагнитные поля;
 - работающие на основе таких полей генераторы случайных чисел могут воспринимать эти искажения, что
