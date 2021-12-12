@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--package="enchantit.huawei" package="com.RD_AAOW.EnchantIt"-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.RD_AAOW.EnchantIt"
-		android:installLocation="internalOnly" android:versionCode="600122" android:versionName="1.7">
+		android:installLocation="internalOnly" android:versionCode="600125" android:versionName="1.7.2">
 
-	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30" />
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="31" />
 
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />

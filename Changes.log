@@ -1,5 +1,10 @@
 EnchantIt changes log:
 
+Version 1.7.2:
+• Implemented new mechanism for evaluation of font sizes in the main interface;
+• Target API upgraded to 31 (S);
+• Updated Xamarin support packages
+
 Version 1.7:
 • Cumulative updates applied
 
