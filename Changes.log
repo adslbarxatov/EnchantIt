@@ -2,7 +2,8 @@ EnchantIt changes log:
 
 Version 1.8:
 • App name changed to “PA detector” (paranormal abilities detector);
-• Changes app visual style
+• Changed app visual style;
+• Android: fixed bug with font size on large screens
 
 Version 1.7.3:
 • Current updates and improvements applied
