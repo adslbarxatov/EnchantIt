@@ -1,15 +1,15 @@
-# EnchantIt v 1.7.3
+# EnchantIt v 1.8
 
 
-Extraordinary abilities search tool
+Paranormal abilities search tool
 
-Инструмент поиска экстраординарных способностей
+Инструмент поиска паранормальных способностей
 
 #
 
 ## Description
 
-As you already understood, this is an unusual application. Its task is to _discover and mathematically
+As you already understood, this is an unusual application (formerly known as EnchantIt). Its task is to _discover and mathematically
 confirm your ability to influence the surrounding reality not only by actions and words_. Yes, there
 is a theory that describes a very specific mechanism for registering such an influence, which we suggest you test.
 
@@ -56,7 +56,7 @@ and maximum participation. Good luck, novice enchanters!
 
 ## Описание
 
-Как вы уже поняли, это – необычное приложение. Его задача – _обнаружить и математически подтвердить
+Как вы уже поняли, это – необычное приложение (ранее известное как EnchantIt). Его задача – _обнаружить и математически подтвердить
 наличие у Вас способности влиять на окружающую действительность не только действиями и словами_. Да,
 существует теория, которая описывает вполне конкретный механизм регистрации такого влияния, который
 мы и предлагаем Вам испытать.
