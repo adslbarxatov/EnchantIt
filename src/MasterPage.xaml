@@ -5,5 +5,7 @@
              x:Class="RD_AAOW.MasterPage">
 
 	<mypages:SolutionPage x:Name="SolutionPage" />
+	<mypages:TTM1Page x:Name="TTM1Page" />
+	<!--<mypages:TTM2Page x:Name="TTM2Page" />-->
 	<mypages:AboutPage x:Name="AboutPage" />
 </CarouselPage>

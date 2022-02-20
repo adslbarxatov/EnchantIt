@@ -133,7 +133,7 @@
     <value>Cancel</value>
   </data>
   <data name="CertNameHelp" xml:space="preserve">
-    <value>Enter the name of certificate's owner.
+    <value>Enter the name of certificate’s owner.
 
 WARNING! This name cannot be changed without the application reinstallation. Please, enter the name accurately (not less than 3 letters). This information will not leave this device</value>
   </data>
@@ -165,31 +165,34 @@ Do you want to continue?</value>
   <data name="EmailsAreUnavailable" xml:space="preserve">
     <value>This device has no mail agent</value>
   </data>
+  <data name="GettingSentence" xml:space="preserve">
+    <value>Your companion is typing...</value>
+  </data>
   <data name="HiResults" xml:space="preserve">
     <value>Extraordinary results:</value>
   </data>
   <data name="Instructions" xml:space="preserve">
-    <value>Hello again. As you already understood, this is an unusual application. Its task is to discover and mathematically confirm your ability to influence the surrounding reality not only by actions and words. Yes, there is a theory that describes a very specific mechanism for registering such an influence, which we suggest you test.
+    <value>Hello again. As you already understood, this is an unusual application. Its task is to discover and mathematically confirm some paranormal activity. Yes, there is a theory that describes a very specific mechanism for registering such events, which we suggest you test.
 
 
-A detailed methodological and physical-mathematical description of this implementation and the project presentation are available above. In short:
+In short:
 
 • the theory suggests that brain activity (primarily emotional) can distort the electromagnetic fields existing around us;
 
-• generators of random numbers working on the basis of such fields can perceive these distortions, which will affect the results of their work; moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
+• generators of random numbers (PRNG) working on the basis of such fields can perceive these distortions, which will affect the results of their work. Moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
 
-• registration of RNG readings for some time can show significant deviations from the norm and link them to any events.
+• registration of PRNG readings for some time can show significant deviations from the norm and link them to any events.
 
 
 This application uses the strength of WiFi signal or the entropy of operating system kernel (“noise” of the processor and timer, fluctuations in the speed of network packets and core temperature) as an indicator of severe disturbances in surrounding electromagnetic field. Based on them, it generates a series of random numbers.
 
 
-Normally, the average value in such series should be close to the middle of range of possible values (you will see it on the slider). The app will catch and accumulate major deviations from the middle, noting when they occurred. This will help you understand if you are capable of what can be called “witchcraft” in the past.
+Normally, the average value in such series should be close to the middle of range of possible values (you will see it on the slider). The app will catch and accumulate major deviations from the middle, noting when they occurred. This will help you understand if you see some paranormal activity right now.
 
 
 Please note that this method is experimental! It is close to scientific, but it is not. Moreover, it has not yet been tested for the reliability of the results (if at all possible). Therefore, for the purity of the experiment:
 
-• start generation, being in the area of a stable WiFi signal, where serious interruptions and interference are not expected; for the method based on the OS kernel entropy, this means the absence of extraneous aggressive radiation;
+• start generation, being in the area where serious interruptions and interference are not expected. Also this means the absence of extraneous aggressive radiation;
 
 • do not take the results (especially the first ones) as the ultimate truth and do not react to them too emotionally;
 
@@ -198,13 +201,14 @@ Please note that this method is experimental! It is close to scientific, but it 
 • share the results with colleagues and friends (the app has a built-in function) to understand the correctness / incorrectness of the testing method.
 
 
-In the current form of the method, an absence of positive results doesn’t mean anything. However, their presence relatively reliably shows some complex distortion of electromagnetic field, which, even after the generation algorithm, leaves a trace in its operation. That is, your ability to influence it.
+In the current form of the method, an absence of positive results doesn’t mean anything. However, their presence relatively reliably shows some complex distortion of electromagnetic field, which, even after the generation algorithm, leaves a trace in its operation. That is, your (or somebody’s, or something’s) ability to influence it.
 
 
-The test can be considered successfully passed if the slider is shifted to the left by a noticeable distance (the scale will change its color to orange) for three or more seconds in a row. This can happen as a result of a high degree of concentration on it, and under the influence of strong emotions of a person who is near the device. Try different options – one of them may give the desired effect.
+The test can be considered successfully passed if the slider is shifted to the right by a noticeable distance (the scale will change its color to orange) for three or more seconds in a row. This can happen as a result of a high degree of concentration on it, and under the influence of strong emotions of a person who is near the device. Try different options – one of them may give the desired effect.
 
 
-In general, go for it! We really have no idea what the results of this experiment will be. Therefore, we hope for your feedback (comments on improving the method, results obtained, suggestions and bug reports) and maximum participation. Good luck, novice enchanters!
+In general, go for it! We really have no idea what the results of this experiment will be. Therefore, we hope for your feedback (comments on improving the method, results obtained, suggestions and bug reports) and maximum participation. Good luck!
+
 
 Swipe this screen to the right to start the experiment</value>
   </data>
@@ -226,7 +230,7 @@ Swipe this screen to the right to start the experiment</value>
   <data name="MethodSelect" xml:space="preserve">
     <value>Select random number generation method:</value>
   </data>
-  <data name="MethodWifi" xml:space="preserve">
+  <data name="MethodWiFi" xml:space="preserve">
     <value>Default method based on WiFi signal</value>
   </data>
   <data name="NextButton" xml:space="preserve">
@@ -252,17 +256,29 @@ Swipe this screen to the right to start the experiment</value>
     <value>Select language:</value>
   </data>
   <data name="SolutionPage" xml:space="preserve">
-    <value>Test status and results</value>
+    <value>Give me a sign</value>
+  </data>
+  <data name="StartingGeneration" xml:space="preserve">
+    <value>Starting the generation...</value>
   </data>
   <data name="Tip00" xml:space="preserve">
-    <value>Welcome to the “extraordinary” abilities testing tool!
+    <value>Welcome to the paranormal activity search tool!
 
-Please read the description and explanations on this page of the app before starting testing for a better understanding of how the tool works and the essence of the experiment</value>
+Please read the description and explanations on this page of the app before starting for a better understanding of how the tool works and the essence of the experiment</value>
   </data>
   <data name="Tip01" xml:space="preserve">
-    <value>Congratulations! It looks like you do have some “paranormal” abilities!
+    <value>Congratulations! It looks like you have found some paranormal activity!
 
-Now you can get a certificate confirming this – the corresponding button is available at the bottom of this screen. However, to exclude a possible accidental triggering, we recommend continuing to participate in the experiment to increase the reliability of your result. All new achievements will also be added to your certificate</value>
+Now you can get a certificate confirming this – the corresponding button is available at the bottom of this screen. However, to exclude a possible accidental triggering, we recommend continuing to participate in the experiment to increase the reliability of your result. All new events will also be added to your certificate</value>
+  </data>
+  <data name="Tip02" xml:space="preserve">
+    <value>Attention! Most of messages in the new “Talk to me” section will most likely not make sense. This is fine. We’re only interested in those cases where the answers show signs of intelligence or – more likely – the characteristic features of communication on the part of the “interlocutor”</value>
+  </data>
+  <data name="TTM1Page" xml:space="preserve">
+    <value>Talk to me</value>
+  </data>
+  <data name="TTM2Page" xml:space="preserve">
+    <value>Show me the hidden</value>
   </data>
   <data name="WebIsUnavailable" xml:space="preserve">
     <value>This device has no web browser</value>
