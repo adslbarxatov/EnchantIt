@@ -1,4 +1,4 @@
-# EnchantIt v 2.0
+# EnchantIt v 2.0b
 
 
 PA detector (formerly known as EnchantIt), the paranormal activity search tool
