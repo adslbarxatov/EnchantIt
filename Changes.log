@@ -1,5 +1,8 @@
 PA detector changes log:
 
+ToDo:
+- Create the painter
+
 Version 2.0:
 • Implemented the “messaging system”: app now able to translate PRNG flow into
   “pseudotext” messages with probability of meaningful answers. The next step
