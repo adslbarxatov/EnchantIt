@@ -1,7 +1,8 @@
 PA detector changes log:
 
-ToDo:
-- Create the painter
+Version 2.5:
+• Implemented the graphical representation for PRNG data (test mode);
+• Implemented the combined method for PRN generation
 
 Version 2.0.4:
 • Xamarin support libraries have been updated

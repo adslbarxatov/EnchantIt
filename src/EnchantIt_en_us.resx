@@ -224,17 +224,23 @@ Swipe this screen to the right to start the experiment</value>
   <data name="ManualPage" xml:space="preserve">
     <value>User videoguide</value>
   </data>
-  <data name="MethodCore" xml:space="preserve">
+  <data name="Method00" xml:space="preserve">
     <value>Method based on OS kernel entropy</value>
+  </data>
+  <data name="Method01" xml:space="preserve">
+    <value>Method based on WiFi signal</value>
+  </data>
+  <data name="Method02" xml:space="preserve">
+    <value>Combined method (core + WiFi)</value>
+  </data>
+  <data name="MethodName" xml:space="preserve">
+    <value>Method {0:D}: </value>
   </data>
   <data name="MethodPage" xml:space="preserve">
     <value>Complete description</value>
   </data>
   <data name="MethodSelect" xml:space="preserve">
     <value>Select random number generation method:</value>
-  </data>
-  <data name="MethodWiFi" xml:space="preserve">
-    <value>Default method based on WiFi signal</value>
   </data>
   <data name="NextButton" xml:space="preserve">
     <value>Next</value>
