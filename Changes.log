@@ -1,5 +1,13 @@
 PA detector changes log:
 
+ToDo:
+- Fix: при каждой отправке сообщений в чат выскакивает оповещение о сертификате;
+- Fix: пикселей в изображении на два больше, чем нужно в строке;
+- Fix: отсутствует кнопка обнуления сеанса;
+- Fix: кнопки интерфейса О приложении уходя за край экрана;
+- Fix: может, добавить время сеанса и его номер?
+- Fix: третий интерфейс вешается при запуске
+
 Version 2.5:
 • Implemented the graphical representation for PRNG data (test mode);
 • Implemented the combined method for PRN generation
