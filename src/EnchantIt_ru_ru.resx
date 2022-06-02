@@ -137,6 +137,9 @@
 
 ПРЕДУПРЕЖДЕНИЕ! Это имя нельзя изменить без переустановки приложения. Пожалуйста, введите имя правильно (не менее трёх букв). Эта информация не покинет данное устройство</value>
   </data>
+  <data name="ChatResetRequest" xml:space="preserve">
+    <value>Эта опция полностью очистит чат. Продолжить?</value>
+  </data>
   <data name="CommunitySelect" xml:space="preserve">
     <value>Выберите сообщество:</value>
   </data>

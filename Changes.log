@@ -1,12 +1,14 @@
 PA detector changes log:
 
 ToDo:
-- Fix: при каждой отправке сообщений в чат выскакивает оповещение о сертификате;
-- Fix: пикселей в изображении на два больше, чем нужно в строке;
-- Fix: отсутствует кнопка обнуления сеанса;
-- Fix: кнопки интерфейса О приложении уходя за край экрана;
 - Fix: может, добавить время сеанса и его номер?
-- Fix: третий интерфейс вешается при запуске
+
+Version 2.6:
+• Fixed behavior of the message about the certificate availability;
+• Adjusted the width of the picture for “show it to me” mode;
+• Added the reset button for the “chat”;
+• Adjusted the buttons placement for “App about” interface;
+• Fixed the INR situation with the “Show it to me” interface
 
 Version 2.5:
 • Implemented the graphical representation for PRNG data (test mode);

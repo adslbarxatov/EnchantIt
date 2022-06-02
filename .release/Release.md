@@ -1,6 +1,8 @@
-_Изменения для v 2.5_:
+_Изменения для v 2.6_:
+- Fixed behavior of the message about the certificate availability;
+- Adjusted the width of the picture for “show it to me” mode;
+- Added the reset button for the “chat”;
+- Adjusted the buttons placement for “App about” interface;
+- Fixed the INR situation with the “Show it to me” interface;
 - Implemented the graphical representation for PRNG data (test mode);
-- Implemented the combined method for PRN generation;
-- Xamarin support libraries have been updated;
-- Added some extra warnings about the availability of the app;
-- User guide has been updated
+- Implemented the combined method for PRN generation

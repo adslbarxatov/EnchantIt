@@ -137,6 +137,9 @@
 
 WARNING! This name cannot be changed without the application reinstallation. Please, enter the name accurately (not less than 3 letters). This information will not leave this device</value>
   </data>
+  <data name="ChatResetRequest" xml:space="preserve">
+    <value>This option will clean up the chat. Continue?</value>
+  </data>
   <data name="CommunitySelect" xml:space="preserve">
     <value>Select community:</value>
   </data>
