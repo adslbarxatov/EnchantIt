@@ -1,9 +1,7 @@
 ﻿using Android.App;
-using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Views;
-using System.Threading.Tasks;
 
 #if DEBUG
 [assembly: Application (Debuggable = true)]
@@ -16,7 +14,12 @@ namespace RD_AAOW.Droid
 	/// <summary>
 	/// Класс описывает загрузчик приложения
 	/// </summary>
-	[Activity (Label = "PA detector", Icon = "@mipmap/icon", Theme = "@style/MainTheme",
+	[Activity (Label = "PA detector",
+		/*Icon = "@mipmap/icon", 
+		Theme = "@style/MainTheme",*/
+		Icon = "@drawable/launcher_foreground",
+		Theme = "@style/SplashTheme",
+		MainLauncher = true,
 		ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity:global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 		{
@@ -29,11 +32,17 @@ namespace RD_AAOW.Droid
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
 
+			// Отмена темы для splash screen
+			base.SetTheme (Resource.Style.MainTheme);
+
+			// Инициализация и запуск
 			base.OnCreate (savedInstanceState);
 			global::Xamarin.Forms.Forms.Init (this, savedInstanceState);
 			global::Xamarin.Essentials.Platform.Init (this, savedInstanceState);
 
-			this.Window.AddFlags (WindowManagerFlags.KeepScreenOn); // Запрет на переход в ждущий режим
+			// Запрет на переход в ждущий режим
+			this.Window.AddFlags (WindowManagerFlags.KeepScreenOn); 
+
 			LoadApplication (new App ());
 			}
 
@@ -49,7 +58,7 @@ namespace RD_AAOW.Droid
 			}
 		}
 
-	/// <summary>
+	/*/// <summary>
 	/// Класс описывает экран-заставку приложения
 	/// </summary>
 	[Activity (Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true,
@@ -84,5 +93,5 @@ namespace RD_AAOW.Droid
 				});
 			startup.Start ();
 			}
-		}
+		}*/
 	}

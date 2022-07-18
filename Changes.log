@@ -3,6 +3,10 @@ PA detector changes log:
 ToDo:
 - Fix: может, добавить время сеанса и его номер?
 
+Version 2.7:
+• Upgraded the user interface: applied correct icon, fixed flickering splash screen,
+  fixed white navigation bar
+
 Version 2.6:
 • Fixed behavior of the message about the certificate availability;
 • Adjusted the width of the picture for “show it to me” mode;
