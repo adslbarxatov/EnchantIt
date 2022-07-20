@@ -1,7 +1,8 @@
 PA detector changes log:
 
 ToDo:
-- Fix: может, добавить время сеанса и его номер?
+- Session start time and number;
+- Different presentations of the same set of data in the SMTH
 
 Version 2.7:
 • Upgraded the user interface: applied correct icon, fixed flickering splash screen,
