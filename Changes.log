@@ -1,8 +1,12 @@
 PA detector changes log:
 
 ToDo:
-- Session start time and number;
-- Different presentations of the same set of data in the SMTH
+- Session start time and number
+
+Version 2.8:
+• Implemented different presentations of data in the “Show it to me” interface;
+• A short guide will be displayed at the top of the page the first time user launches
+  the app
 
 Version 2.7:
 • Upgraded the user interface: applied correct icon, fixed flickering splash screen,
