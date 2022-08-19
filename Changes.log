@@ -1,7 +1,8 @@
 PA detector changes log:
 
 ToDo:
-- Session start time and number
+- Session start time and number;
+- Recommended using of radio noise as a seed for RNG (or instead of it)
 
 Version 2.8:
 • Implemented different presentations of data in the “Show it to me” interface;
