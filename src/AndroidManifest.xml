@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- enchantit.huawei -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.RD_AAOW.EnchantIt"
-		android:installLocation="internalOnly" android:versionCode="600209" android:versionName="2.8">
+		android:installLocation="internalOnly" android:versionCode="600210" android:versionName="2.9">
 
 	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="31" />
 

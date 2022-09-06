@@ -1,6 +1,6 @@
-_Изменения для v 2.8_:
-- Implemented different presentations of data in the “Show it to me” interface;
-- A short guide will be displayed at the top of the page the first time user launches the app;
-- Upgraded the user interface: applied correct icon, fixed flickering splash screen, fixed white navigation bar;
-- Fixed behavior of the message about the certificate availability;
-- Adjusted the width of the picture for “show it to me” mode
+_Изменения для v 2.9_:
+- Support for “Talk to me” and “Show the hidden” has been stopped due to inability to confirm the validity of these methods;
+- Xamarin core packages have been updated;
+- Emergency messages have been updated;
+- Failed to use radio receiver as a seed: this option is hardware-dependent;
+- A short guide will be displayed at the top of the page the first time user launches the app
