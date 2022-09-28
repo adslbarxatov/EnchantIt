@@ -1,5 +1,10 @@
 PA detector changes log:
 
+Version 2.10:
+• Target Android version changed to T (API 33);
+• Fixed some headers and tips;
+• Updated Xamarin support packages
+
 Version 2.9.5:
 • Fixed some minor bugs;
 • Implemented the ability to open localized ADP, SCP and Welcome pages

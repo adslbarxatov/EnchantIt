@@ -2,9 +2,9 @@
 <!-- enchantit.huawei -->
 <!-- enchantit.xiaomi -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.RD_AAOW.EnchantIt"
-		android:installLocation="internalOnly" android:versionCode="600212" android:versionName="2.9.5">
+		android:installLocation="internalOnly" android:versionCode="600213" android:versionName="2.10">
 
-	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="31" />
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="33" />
 
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
