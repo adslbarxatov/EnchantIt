@@ -1,5 +1,9 @@
 PA detector changes log:
 
+Version 2.10.2:
+• XPR control has been implemented;
+• Code refactoring has been applied to messages and notifications
+
 Version 2.10:
 • Target Android version changed to T (API 33);
 • Fixed some headers and tips;
