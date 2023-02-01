@@ -1,4 +1,4 @@
-# EnchantIt v 2.10.2
+# EnchantIt v 2.11
 
 
 
@@ -19,7 +19,7 @@ In short:
 - generators of random numbers (PRNG) working on the basis of such fields can perceive these distortions, which will affect the results of their work. Moreover, due to the complexity of the generation algorithm, such an effect is difficult to fake;
 - registration of PRNG readings for some time can show significant deviations from the norm and link them to any events.
 
-This application uses the strength of WiFi signal or the entropy of operating system kernel (“noise” of the processor and timer, fluctuations in the speed of network packets and core temperature) as an indicator of severe disturbances in surrounding electromagnetic field. Based on them, it generates a series of random numbers.
+This app uses the strength of WiFi signal or the entropy of operating system kernel (“noise” of the processor and timer, fluctuations in the speed of network packets and core temperature) as an indicator of severe disturbances in surrounding electromagnetic field. Based on them, it generates a series of random numbers.
 
 Normally, the average value in such series should be close to the middle of range of possible values (you will see it on the slider). The app will catch and accumulate major deviations from the middle, noting when they occurred. This will help you understand if you see some paranormal activity right now.
 
@@ -84,14 +84,12 @@ In general, go for it! We really have no idea what the results of this experimen
 ## Requirements / Требования
 
 - [Android version](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) requires OS 6.0 or newer. Interface languages: ru_ru, en_us;
-- Application is available in [AppGallery](https://appgallery.cloud.huawei.com/ag/n/app/C104441189?channelId=GitHub&id=981952b9902a490ebfb1b8c5d11f8eef&s=A8B622B12555EE34769CFFF6303E49EF4841788E101068082F7EAF51DE3D7C24&detailType=0&v=&callType=AGDLINK&installType=0000).
 - Application is also available in [GetApps](https://global.app.mi.com/details?id=enchantit.xiaomi).
 
 #
 
 - Для [Android-версии](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) требуется ОС версии 6.0 или новее. Языки интерфейса: ru_ru, en_us;
-- Приложение доступно в [AppGallery](https://appgallery.cloud.huawei.com/ag/n/app/C104441189?channelId=GitHub&id=981952b9902a490ebfb1b8c5d11f8eef&s=A8B622B12555EE34769CFFF6303E49EF4841788E101068082F7EAF51DE3D7C24&detailType=0&v=&callType=AGDLINK&installType=0000).
-- Приложение также доступно в [GetApps](https://global.app.mi.com/details?id=enchantit.xiaomi).
+- Приложение также доступно в [GetApps](https://global.app.mi.com/details?id=enchantit.rdaaowfdl).
 
 &nbsp;
 
