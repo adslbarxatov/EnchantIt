@@ -84,11 +84,13 @@ In general, go for it! We really have no idea what the results of this experimen
 ## Requirements / Требования
 
 - [Android version](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) requires OS 6.0 or newer. Interface languages: ru_ru, en_us;
-- Application is also available in [GetApps](https://global.app.mi.com/details?id=enchantit.xiaomi).
+- App is available in [AppGallery](https://url.cloud.huawei.com/kOnbnDnG12?shareTo=qrcode).
+- App is also available in [GetApps](https://global.app.mi.com/details?id=enchantit.xiaomi).
 
 #
 
 - Для [Android-версии](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) требуется ОС версии 6.0 или новее. Языки интерфейса: ru_ru, en_us;
+- Приложение доступно в [AppGallery](https://url.cloud.huawei.com/kOnbnDnG12?shareTo=qrcode).
 - Приложение также доступно в [GetApps](https://global.app.mi.com/details?id=enchantit.rdaaowfdl).
 
 &nbsp;
