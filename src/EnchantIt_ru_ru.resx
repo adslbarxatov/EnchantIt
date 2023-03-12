@@ -120,17 +120,11 @@
   <data name="AboutPage" xml:space="preserve">
     <value>О приложении</value>
   </data>
-  <data name="AcceptButton" xml:space="preserve">
-    <value>Принять</value>
-  </data>
   <data name="ADPPage" xml:space="preserve">
     <value>Политика и EULA</value>
   </data>
   <data name="AppPage" xml:space="preserve">
     <value>Страница проекта</value>
-  </data>
-  <data name="CancelButton" xml:space="preserve">
-    <value>Отмена</value>
   </data>
   <data name="CertNameHelp" xml:space="preserve">
     <value>Введите имя владельца сертификата.
@@ -143,20 +137,8 @@
   <data name="CommunitySelect" xml:space="preserve">
     <value>Выберите сообщество:</value>
   </data>
-  <data name="CommunityTG" xml:space="preserve">
-    <value>FDL в Telegram</value>
-  </data>
-  <data name="CommunityVK" xml:space="preserve">
-    <value>FDL на VK.com</value>
-  </data>
-  <data name="CommunityWelcome" xml:space="preserve">
-    <value>Приветственная страница</value>
-  </data>
   <data name="ConnectionLost" xml:space="preserve">
     <value>WiFi недоступен. Генерация была прервана</value>
-  </data>
-  <data name="DeclineButton" xml:space="preserve">
-    <value>Читать</value>
   </data>
   <data name="DevMessage" xml:space="preserve">
     <value>Отправляя письмо разработчику, Вы деанонимизируете свой E-mail!
@@ -168,14 +150,14 @@
   <data name="DevPage" xml:space="preserve">
     <value>Спросить разработчика</value>
   </data>
-  <data name="EmailsAreUnavailable" xml:space="preserve">
-    <value>Почтовый агент отсутствует на этом устройстве</value>
-  </data>
   <data name="GettingSentence" xml:space="preserve">
     <value>Собеседник набирает текст...</value>
   </data>
+  <data name="HelpLabel" xml:space="preserve">
+    <value>Помощь и поддержка</value>
+  </data>
   <data name="HiResults" xml:space="preserve">
-    <value>Экстраординарные результаты:</value>
+    <value>Зафиксированные результаты:</value>
   </data>
   <data name="Instructions" xml:space="preserve">
     <value>И снова здравствуйте. Как вы уже поняли, это – необычное приложение. Его задача – обнаружить и математически подтвердить какую-либо паранормальную активность. Да, существует теория, которая описывает вполне конкретный механизм регистрации таких событий, который мы и предлагаем Вам испытать.
@@ -222,10 +204,13 @@
     <value>Ядро: </value>
   </data>
   <data name="LanguageLabel" xml:space="preserve">
-    <value>Язык интерфейса:</value>
+    <value>Язык интерфейса</value>
   </data>
   <data name="ManualPage" xml:space="preserve">
-    <value>Видеоруководство</value>
+    <value>Руководство пользователя</value>
+  </data>
+  <data name="ManualsLabel" xml:space="preserve">
+    <value>Справочные материалы</value>
   </data>
   <data name="Method00" xml:space="preserve">
     <value>Метод на базе энтропии ядра ОС</value>
@@ -237,23 +222,15 @@
     <value>Комбинированный метод (ядро + WiFi)</value>
   </data>
   <data name="MethodName" xml:space="preserve">
-    <value>Метод {0:D}: </value>
+    <value>Метод №{0:D}
+Отклонение: {1:S}
+Событий: {2:D}</value>
   </data>
   <data name="MethodPage" xml:space="preserve">
-    <value>Полное описание</value>
+    <value>Полное описание метода</value>
   </data>
   <data name="MethodSelect" xml:space="preserve">
     <value>Выберите метод генерации случайных чисел:</value>
-  </data>
-  <data name="NextButton" xml:space="preserve">
-    <value>Далее</value>
-  </data>
-  <data name="PolicyMessage" xml:space="preserve">
-    <value>Перед началом работы с этим инструментом Вы должны принять Политику разработки приложений и Пользовательское соглашение. Хотите открыть их тексты в браузере?
-
-• Нажмите «Принять», если Вы уже ознакомились и полностью приняли их;
-• Нажмите «Читать», если хотите открыть их в браузере;
-• Чтобы отклонить их, закройте приложение</value>
   </data>
   <data name="RestartApp" xml:space="preserve">
     <value>Перезапустите приложение</value>
@@ -268,7 +245,7 @@
     <value>Выберите язык:</value>
   </data>
   <data name="SolutionPage" xml:space="preserve">
-    <value>Дай мне знак</value>
+    <value>Поиск</value>
   </data>
   <data name="StartingGeneration" xml:space="preserve">
     <value>Запуск генерации...</value>
@@ -291,9 +268,6 @@
   </data>
   <data name="TTM2Page" xml:space="preserve">
     <value>Покажи скрытое</value>
-  </data>
-  <data name="WebIsUnavailable" xml:space="preserve">
-    <value>Веб-браузер отсутствует на этом устройстве</value>
   </data>
   <data name="WiFiMethod" xml:space="preserve">
     <value>WiFi: </value>
