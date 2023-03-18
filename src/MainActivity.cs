@@ -14,12 +14,12 @@ namespace RD_AAOW.Droid
 	/// <summary>
 	/// Класс описывает загрузчик приложения
 	/// </summary>
-	[Activity (Label = "PA detector",
+	[Activity (Label = "Paranormal activity detector",
 		Icon = "@drawable/launcher_foreground",
 		Theme = "@style/SplashTheme",
 		MainLauncher = true,
 		ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	public class MainActivity:global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+	public class MainActivity: global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 		{
 		/// <summary>
 		/// Обработчик события создания экземпляра

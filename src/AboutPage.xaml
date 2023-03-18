@@ -16,7 +16,7 @@
 
 				<Label x:Name="ManualsLabel" />
 
-				<Button x:Name="MethodPage" HorizontalOptions="Center" />
+				<Button x:Name="VideoPage" HorizontalOptions="Center" />
 				<Button x:Name="ManualPage" HorizontalOptions="Center" />
 				<Button x:Name="AppPage" HorizontalOptions="Center" />
 				<Button x:Name="ADPPage" HorizontalOptions="Center" />
@@ -34,11 +34,6 @@
 
 				<Label x:Name="LanguageLabel" HorizontalOptions="Center" />
 				<Button x:Name="LanguageSelector" HorizontalOptions="Center" />
-
-				<BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="1" 
-					WidthRequest="200" Color="#606060" Margin="9" />
-
-				<Label x:Name="InstructionsField" HorizontalOptions="Fill" />
 
 				<Label />
 
