@@ -7,7 +7,7 @@
 
 - [Background of the project](#background-of-the-project)
 - [Operating principle](#operating-principle)
-- [H](#h)
+- [Conclusion](#conclusion)
 
 ---
 
@@ -81,8 +81,8 @@ too emotionally;
 the correctness / incorrectness of the testing method.
 
 In the current form of the method, ***an absence of positive results doesn’t mean anything***. However, ***their
-presence relatively reliably shows some complex distortion of electromagnetic field, which, even after
-the generation algorithm, leaves a trace in its operation***. That is, your ability to influence it.
+presence relatively reliably shows some complex distortion of electromagnetic field***, which, even after
+the generation algorithm, leaves a trace in its operation. That is, ***your ability to influence it***.
 
 The test can be considered ***successfully passed*** if the slider on the main page is shifted to the
 right by a noticeable distance (the scale will change its color to orange) for three or more seconds
@@ -94,4 +94,8 @@ the desired effect.
 
 ---
 
-###
+### Conclusion
+
+In general, go for it! We really have no idea what the results of this experiment will be. Therefore,
+we hope for your feedback (comments on improving the method, results obtained, suggestions and bug
+reports) and maximum participation. Good luck!
