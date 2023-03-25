@@ -1,28 +1,26 @@
 # EnchantIt v 3.0.2
 
+---
 
-
-Paranormal activity detector (formerly known as EnchantIt), the paranormal activity search tool
-
-Paranormal activity detector (ранее известный как EnchantIt) – инструмент поиска паранормальной активности
-
-#
-
-## Description
+Paranormal activity detector (formerly known as EnchantIt), the paranormal activity search tool.
 
 The task of the app is to discover and mathematically confirm your (or somebody’s, or something’s) ability
 to influence the surrounding reality not only by actions and words. How does it work?
 You can find an answer on the [page of the method’s description](https://adslbarxatov.github.io/EnchantIt)
 
-&nbsp;
+More info you can find in [this video guide](https://youtu.be/hTnDR89VR8w).
+
+---
 
 
 
-## Описание
+Paranormal activity detector (ранее известный как EnchantIt) – инструмент поиска паранормальной активности.
 
 Задача приложения – обнаружить и математически подтвердить наличие у Вас (или у кого-то или чего-то ещё)
 способности влиять на окружающую действительность не только действиями и словами. Как это работает?
-Ответ можно найти на [странице описания метода](https://adslbarxatov.github.io/EnchantIt/ru)
+Ответ можно найти на [странице описания метода](https://adslbarxatov.github.io/EnchantIt/ru).
+
+Больше информации Вы сможете найти в [этом видеоруководстве](https://youtu.be/hTnDR89VR8w).
 
 &nbsp;
 
