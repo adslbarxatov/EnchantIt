@@ -1,5 +1,5 @@
 # Paranormal activity detector: the method description
-> **ƒ** &nbsp;RD AAOW FDL; 18.03.2023; 18:46
+> **ƒ** &nbsp;RD AAOW FDL; 25.03.2023; 21:13
 
 
 
@@ -8,6 +8,7 @@
 - [Background of the project](#background-of-the-project)
 - [Operating principle](#operating-principle)
 - [Conclusion](#conclusion)
+- [Video guide](https://youtu.be/hTnDR89VR8w)
 
 ---
 
