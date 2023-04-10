@@ -10,6 +10,7 @@
 - [Заключение](#section-3)
 - [Видеоруководство](https://youtu.be/hTnDR89VR8w)
 - [Ссылки для загрузки](https://adslbarxatov.github.io/DPArray/ru#pa-detector-enchant-it)
+- [English version](https://adslbarxatov.github.io/EnchantIt)
 
 ---
 
