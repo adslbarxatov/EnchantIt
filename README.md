@@ -1,4 +1,4 @@
-# EnchantIt v 3.0.2
+# EnchantIt v 3.1
 
 ---
 

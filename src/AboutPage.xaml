@@ -32,8 +32,21 @@
 				<BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="1" 
 					WidthRequest="200" Color="#606060" Margin="9" />
 
-				<Label x:Name="LanguageLabel" HorizontalOptions="Center" />
-				<Button x:Name="LanguageSelector" HorizontalOptions="Center" />
+				<Label x:Name="GenericSettingsLabel" />
+				<Label x:Name="RestartTipLabel" />
+
+				<StackLayout Orientation="Horizontal">
+					<Label x:Name="LanguageLabel" VerticalOptions="Center" />
+					<Button x:Name="LanguageSelector" VerticalOptions="Center" />
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal">
+					<Label x:Name="FontSizeLabel" VerticalOptions="Center" />
+
+					<Button x:Name="FontSizeInc" VerticalOptions="Center" />
+					<Label x:Name="FontSizeField" VerticalOptions="Center" />
+					<Button x:Name="FontSizeDec" VerticalOptions="Center" />
+				</StackLayout>
 
 				<Label />
 

@@ -117,15 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutPage" xml:space="preserve">
-    <value>About the application</value>
-  </data>
-  <data name="ADPPage" xml:space="preserve">
-    <value>Policy and EULA</value>
-  </data>
-  <data name="AppPage" xml:space="preserve">
-    <value>App webpage</value>
-  </data>
   <data name="CertNameHelp" xml:space="preserve">
     <value>Enter the name of certificate’s owner.
 
@@ -133,9 +124,6 @@ WARNING! This name cannot be changed without the application reinstallation. Ple
   </data>
   <data name="ChatResetRequest" xml:space="preserve">
     <value>This option will clean up the chat. Continue?</value>
-  </data>
-  <data name="CommunitySelect" xml:space="preserve">
-    <value>Select community:</value>
   </data>
   <data name="ConnectionLost" xml:space="preserve">
     <value>WiFi connection is unavailable. Generation has been interrupted</value>
@@ -147,14 +135,8 @@ In addition, your results will be included in the draft letter. Don't forget to 
 
 Do you want to continue?</value>
   </data>
-  <data name="DevPage" xml:space="preserve">
-    <value>Ask the developer</value>
-  </data>
   <data name="GettingSentence" xml:space="preserve">
     <value>Your companion is typing...</value>
-  </data>
-  <data name="HelpLabel" xml:space="preserve">
-    <value>Help and support</value>
   </data>
   <data name="HiResults" xml:space="preserve">
     <value>Registered results:</value>
@@ -162,14 +144,8 @@ Do you want to continue?</value>
   <data name="KernelMethod" xml:space="preserve">
     <value>Kernel: </value>
   </data>
-  <data name="LanguageLabel" xml:space="preserve">
-    <value>Interface language</value>
-  </data>
   <data name="ManualPage" xml:space="preserve">
     <value>The method description</value>
-  </data>
-  <data name="ManualsLabel" xml:space="preserve">
-    <value>Reference materials</value>
   </data>
   <data name="Method00" xml:space="preserve">
     <value>Method based on OS kernel entropy</value>
@@ -188,17 +164,11 @@ Events: {2:D}</value>
   <data name="MethodSelect" xml:space="preserve">
     <value>Select random number generation method:</value>
   </data>
-  <data name="RestartApp" xml:space="preserve">
-    <value>Restart the application</value>
-  </data>
   <data name="SaveFileFailure" xml:space="preserve">
     <value>Failed to save certificate. Allow the application to write to device storage and try again</value>
   </data>
   <data name="SaveFileSuccess" xml:space="preserve">
     <value>The certificate is saved in downloads folder</value>
-  </data>
-  <data name="SelectLanguage" xml:space="preserve">
-    <value>Select language:</value>
   </data>
   <data name="SolutionPage" xml:space="preserve">
     <value>Search</value>

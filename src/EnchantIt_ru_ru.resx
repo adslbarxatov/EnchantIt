@@ -117,15 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutPage" xml:space="preserve">
-    <value>О приложении</value>
-  </data>
-  <data name="ADPPage" xml:space="preserve">
-    <value>Политика и EULA</value>
-  </data>
-  <data name="AppPage" xml:space="preserve">
-    <value>Страница проекта</value>
-  </data>
   <data name="CertNameHelp" xml:space="preserve">
     <value>Введите имя владельца сертификата.
 
@@ -133,9 +124,6 @@
   </data>
   <data name="ChatResetRequest" xml:space="preserve">
     <value>Эта опция полностью очистит чат. Продолжить?</value>
-  </data>
-  <data name="CommunitySelect" xml:space="preserve">
-    <value>Выберите сообщество:</value>
   </data>
   <data name="ConnectionLost" xml:space="preserve">
     <value>WiFi недоступен. Генерация была прервана</value>
@@ -147,14 +135,8 @@
 
 Хотите продолжить?</value>
   </data>
-  <data name="DevPage" xml:space="preserve">
-    <value>Спросить разработчика</value>
-  </data>
   <data name="GettingSentence" xml:space="preserve">
     <value>Собеседник набирает текст...</value>
-  </data>
-  <data name="HelpLabel" xml:space="preserve">
-    <value>Помощь и поддержка</value>
   </data>
   <data name="HiResults" xml:space="preserve">
     <value>Зафиксированные результаты:</value>
@@ -162,14 +144,8 @@
   <data name="KernelMethod" xml:space="preserve">
     <value>Ядро: </value>
   </data>
-  <data name="LanguageLabel" xml:space="preserve">
-    <value>Язык интерфейса</value>
-  </data>
   <data name="ManualPage" xml:space="preserve">
     <value>Описание метода</value>
-  </data>
-  <data name="ManualsLabel" xml:space="preserve">
-    <value>Справочные материалы</value>
   </data>
   <data name="Method00" xml:space="preserve">
     <value>Метод на базе энтропии ядра ОС</value>
@@ -188,17 +164,11 @@
   <data name="MethodSelect" xml:space="preserve">
     <value>Выберите метод генерации случайных чисел:</value>
   </data>
-  <data name="RestartApp" xml:space="preserve">
-    <value>Перезапустите приложение</value>
-  </data>
   <data name="SaveFileFailure" xml:space="preserve">
     <value>Не удалось сохранить сертификат. Разрешите приложению запись в память устройства и повторите попытку</value>
   </data>
   <data name="SaveFileSuccess" xml:space="preserve">
     <value>Сертификат сохранён в папку загрузок</value>
-  </data>
-  <data name="SelectLanguage" xml:space="preserve">
-    <value>Выберите язык:</value>
   </data>
   <data name="SolutionPage" xml:space="preserve">
     <value>Поиск</value>

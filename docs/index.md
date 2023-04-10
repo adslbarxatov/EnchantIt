@@ -1,5 +1,5 @@
 # Paranormal activity detector: the method description
-> **ƒ** &nbsp;RD AAOW FDL; 25.03.2023; 21:13
+> **ƒ** &nbsp;RD AAOW FDL; 11.04.2023; 2:09
 
 
 
@@ -9,6 +9,7 @@
 - [Operating principle](#operating-principle)
 - [Conclusion](#conclusion)
 - [Video guide](https://youtu.be/hTnDR89VR8w)
+- [Download links](https://adslbarxatov.github.io/DPArray#pa-detector-enchant-it)
 
 ---
 
