@@ -3,6 +3,10 @@ PA detector: changes log
 ToDo:
 - Fix 'libmonosgen-2.0.so' crash
 
+Version 3.1.2:
+• Updated Xamarin support packages;
+• Updated the App about interface
+
 Version 3.1:
 • Some tips and captions have been replaced or updated;
 • Added the ability to change the font size for the entire interface (available on the last
