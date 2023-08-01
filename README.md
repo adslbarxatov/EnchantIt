@@ -1,6 +1,6 @@
 # EnchantIt v 3.2
 
----
+
 
 Paranormal activity detector (formerly known as EnchantIt), the paranormal activity search tool.
 
@@ -9,8 +9,6 @@ to influence the surrounding reality not only by actions and words. How does it 
 You can find an answer on the [page of the method’s description](https://adslbarxatov.github.io/EnchantIt)
 
 ---
-
-
 
 Paranormal activity detector (ранее известный как EnchantIt) – инструмент поиска паранормальной активности.
 
@@ -24,15 +22,9 @@ Paranormal activity detector (ранее известный как EnchantIt) �
 
 ## Requirements / Требования
 
-- [Android version](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) requires OS 6.0 or newer. Interface languages: ru_ru, en_us;
-- App is available in [AppGallery](https://url.cloud.huawei.com/kOnbnDnG12?shareTo=qrcode).
-- App is also available in [GetApps](https://global.app.mi.com/details?id=enchantit.xiaomi).
+- Android version requires OS 6.0 or newer. Interface languages: ru_ru, en_us;
 
-#
-
-- Для [Android-версии](https://play.google.com/store/apps/details?id=com.RD_AAOW.EnchantIt) требуется ОС версии 6.0 или новее. Языки интерфейса: ru_ru, en_us;
-- Приложение доступно в [AppGallery](https://url.cloud.huawei.com/kOnbnDnG12?shareTo=qrcode).
-- Приложение также доступно в [GetApps](https://global.app.mi.com/details?id=enchantit.rdaaowfdl).
+- Для Android-версии требуется ОС версии 6.0 или новее. Языки интерфейса: ru_ru, en_us;
 
 &nbsp;
 
