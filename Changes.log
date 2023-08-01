@@ -3,6 +3,10 @@ PA detector: changes log
 ToDo:
 - Fix 'libmonosgen-2.0.so' crash
 
+Version 3.2:
+• Xamarin support libraries have been upgraded to AndroidX architecture;
+• Cumulative updates applied
+
 Version 3.1.2:
 • Updated Xamarin support packages;
 • Updated the App about interface
