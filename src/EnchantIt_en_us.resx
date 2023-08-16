@@ -144,9 +144,6 @@ Do you want to continue?</value>
   <data name="KernelMethod" xml:space="preserve">
     <value>Kernel: </value>
   </data>
-  <data name="ManualPage" xml:space="preserve">
-    <value>The method description</value>
-  </data>
   <data name="Method00" xml:space="preserve">
     <value>Method based on OS kernel entropy</value>
   </data>
@@ -194,9 +191,6 @@ Now you can get a certificate confirming this – the corresponding button is av
   </data>
   <data name="TTM2Page" xml:space="preserve">
     <value>Show me the hidden</value>
-  </data>
-  <data name="VideoPage" xml:space="preserve">
-    <value>User video guide</value>
   </data>
   <data name="WiFiMethod" xml:space="preserve">
     <value>WiFi: </value>

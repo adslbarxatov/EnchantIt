@@ -144,9 +144,6 @@
   <data name="KernelMethod" xml:space="preserve">
     <value>Ядро: </value>
   </data>
-  <data name="ManualPage" xml:space="preserve">
-    <value>Описание метода</value>
-  </data>
   <data name="Method00" xml:space="preserve">
     <value>Метод на базе энтропии ядра ОС</value>
   </data>
@@ -194,9 +191,6 @@
   </data>
   <data name="TTM2Page" xml:space="preserve">
     <value>Покажи скрытое</value>
-  </data>
-  <data name="VideoPage" xml:space="preserve">
-    <value>Видеоруководство пользователя</value>
   </data>
   <data name="WiFiMethod" xml:space="preserve">
     <value>WiFi: </value>

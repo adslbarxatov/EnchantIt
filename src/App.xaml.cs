@@ -461,8 +461,8 @@ namespace RD_AAOW
 			if (referenceItems.Count < 1)
 				{
 				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_ProjectWebpage));
-				referenceItems.Add (Localization.GetText ("ManualPage"));
-				referenceItems.Add (Localization.GetText ("VideoPage"));
+				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_UserManual));
+				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_UserVideomanual));
 				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_PolicyEULA));
 				}
 
@@ -511,12 +511,12 @@ namespace RD_AAOW
 
 				// Руководства
 				case 1:
-					url = RDGenerics.AssemblyGitPageLink +
-						(Localization.IsCurrentLanguageRuRu ? "ru" : "");
+					url = RDGenerics.AssemblyGitPageLink /*+
+						(Localization.IsCurrentLanguageRuRu ? "ru" : "")*/;
 					break;
 
 				case 2:
-					url = ProgramDescription.AssemblyVideoLink;
+					url = RDGenerics.StaticYTLink + ProgramDescription.AssemblyReferenceMaterials[0];
 					break;
 
 				// Политика
@@ -556,9 +556,6 @@ namespace RD_AAOW
 					}
 				catch
 					{
-					/*To ast.MakeText (Android.App.Application.Context,
-						Localization.GetDefaultText (LzDefaultTextValues.Message_EMailsNotAvailable),
-						ToastLength.Long).Show ();*/
 					AndroidSupport.ShowBalloon
 						(Localization.GetDefaultText (LzDefaultTextValues.Message_EMailsNotAvailable), true);
 					}
@@ -572,9 +569,6 @@ namespace RD_AAOW
 					}
 				catch
 					{
-					/*To ast.MakeText (Android.App.Application.Context,
-						Localization.GetDefaultText (LzDefaultTextValues.Message_BrowserNotAvailable),
-						ToastLength.Long).Show ();*/
 					AndroidSupport.ShowBalloon
 						(Localization.GetDefaultText (LzDefaultTextValues.Message_BrowserNotAvailable), true);
 					}
@@ -640,9 +634,6 @@ namespace RD_AAOW
 			{
 			ChangeButtonsState (true, false);
 
-			/*Toa st.MakeText (Android.App.Application.Context, Localization.GetText ("StartingGeneration") +
-				Localization.RN + "(" + Localization.GetText ("Method" + ((uint)currentMethod).ToString ("D2")) + ")",
-				ToastLength.Long).Show ();*/
 			AndroidSupport.ShowBalloon
 				(Localization.GetText ("StartingGeneration") +
 				Localization.RN + "(" + Localization.GetText ("Method" + ((uint)currentMethod).ToString ("D2")) + ")",
@@ -731,8 +722,6 @@ namespace RD_AAOW
 				seed = await Task.Run<int> (GetSeed);
 				if (seed == 0)
 					{
-					/*To ast.MakeText (Android.App.Application.Context, Localization.GetText ("ConnectionLost"),
-						ToastLength.Long).Show ();*/
 					AndroidSupport.ShowBalloon (Localization.GetText ("ConnectionLost"), true);
 
 					ChangeButtonsState (false, false);
@@ -983,8 +972,6 @@ namespace RD_AAOW
 			if (await Xamarin.Essentials.Permissions.CheckStatusAsync<Xamarin.Essentials.Permissions.StorageWrite> () !=
 				PermissionStatus.Granted)
 				{
-				/*To ast.MakeText (Android.App.Application.Context, Localization.GetText ("SaveFileFailure"),
-					ToastLength.Long).Show ();*/
 				AndroidSupport.ShowBalloon (Localization.GetText ("SaveFileFailure"), true);
 				return;
 				}
@@ -1014,9 +1001,6 @@ namespace RD_AAOW
 			CertificateBuilder cb = new CertificateBuilder (certName, certData);
 			if (!cb.CertificateCreated)
 				{
-				/*To ast.MakeText (Android.App.Application.Context,
-					"Unexpected failure in image generation process. Debug is required",
-					ToastLength.Long).Show ();*/
 				AndroidSupport.ShowBalloon ("Unexpected failure in image generation process. Debug is required",
 					true);
 				cb.Dispose ();
@@ -1038,7 +1022,6 @@ namespace RD_AAOW
 
 			if (msg != "")
 				AndroidSupport.ShowBalloon (msg, true);
-			/*To ast.MakeText (Android.App.Application.Context, msg, ToastLength.Long).Show ();*/
 			cb.Dispose ();
 			}
 
