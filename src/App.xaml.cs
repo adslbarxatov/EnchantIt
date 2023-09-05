@@ -85,9 +85,6 @@ namespace RD_AAOW
 
 		// Списки вариантов
 		private List<string> methods = new List<string> ();
-		private List<string> languages = new List<string> ();
-		private List<string> referenceItems = new List<string> ();
-		private List<string> helpItems = new List<string> ();
 
 		// Вспомогательные переменные
 		private ConnectivityManager cm;
@@ -370,13 +367,7 @@ namespace RD_AAOW
 			if (firstStart)
 				{
 				// Требование принятия Политики
-				while (!await AndroidSupport.ShowMessage (
-					Localization.GetDefaultText (LzDefaultTextValues.Message_PolicyAcception),
-					Localization.GetDefaultText (LzDefaultTextValues.Button_Accept),
-					Localization.GetDefaultText (LzDefaultTextValues.Button_Read)))
-					{
-					await CallHelpMaterials (2);
-					}
+				await AndroidSupport.PolicyLoop ();
 				RDGenerics.SetAppSettingsValue (firstStartRegKey, ProgramDescription.AssemblyVersion);
 
 				await AndroidSupport.ShowMessage (Localization.GetText ("Tip00"),
@@ -428,154 +419,18 @@ namespace RD_AAOW
 		// Выбор языка приложения
 		private async void SelectLanguage_Clicked (object sender, EventArgs e)
 			{
-			// Запрос
-			if (languages.Count < 1)
-				languages = new List<string> (Localization.LanguagesNames);
-
-			int res = await AndroidSupport.ShowList (
-				Localization.GetDefaultText (LzDefaultTextValues.Message_LanguageSelectionShort),
-				Localization.GetDefaultText (LzDefaultTextValues.Button_Cancel), languages);
-
-			// Сохранение
-			if (res >= 0)
-				{
-				Localization.CurrentLanguage = (SupportedLanguages)res;
-				languageButton.Text = languages[res];
-				}
+			languageButton.Text = await AndroidSupport.CallLanguageSelector ();
 			}
 
 		// Вызов справочных материалов
 		private async void ReferenceButton_Click (object sender, EventArgs e)
 			{
-			await CallHelpMaterials (0);
+			await AndroidSupport.CallHelpMaterials (HelpMaterialsSets.ReferenceMaterials);
 			}
 
 		private async void HelpButton_Click (object sender, EventArgs e)
 			{
-			await CallHelpMaterials (1);
-			}
-
-		private async Task<bool> CallHelpMaterials (uint MaterialsSet)
-			{
-			// Заполнение списков
-			if (referenceItems.Count < 1)
-				{
-				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_ProjectWebpage));
-				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_UserManual));
-				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_UserVideomanual));
-				referenceItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_PolicyEULA));
-				}
-
-			if (helpItems.Count < 1)
-				{
-				helpItems.Add (Localization.GetDefaultText (LzDefaultTextValues.Control_AskDeveloper));
-				helpItems.AddRange (RDGenerics.CommunitiesNames);
-				}
-
-			// Выбор варианта
-			int res;
-			switch (MaterialsSet)
-				{
-				// Ссылки проекта
-				case 0:
-				default:
-					res = await AndroidSupport.ShowList (Localization.GetDefaultText (LzDefaultTextValues.Control_ReferenceMaterials),
-						Localization.GetDefaultText (LzDefaultTextValues.Button_Cancel), referenceItems);
-					break;
-
-				// Ссылки Лаборатории
-				case 1:
-					res = await AndroidSupport.ShowList (Localization.GetDefaultText (LzDefaultTextValues.Control_HelpSupport),
-						Localization.GetDefaultText (LzDefaultTextValues.Button_Cancel), helpItems);
-					break;
-
-				// Специальный вызов для Политики
-				case 2:
-					res = 2;
-					break;
-				}
-
-			if (res < 0)
-				return false;
-			else if (MaterialsSet == 1)
-				res += 10;
-
-			// Обнаружение ссылки
-			string url = "";
-			switch (res)
-				{
-				// Страница проекта
-				case 0:
-					url = RDGenerics.DefaultGitLink + ProgramDescription.AssemblyMainName;
-					break;
-
-				// Руководства
-				case 1:
-					url = RDGenerics.AssemblyGitPageLink /*+
-						(Localization.IsCurrentLanguageRuRu ? "ru" : "")*/;
-					break;
-
-				case 2:
-					url = RDGenerics.StaticYTLink + ProgramDescription.AssemblyReferenceMaterials[0];
-					break;
-
-				// Политика
-				case 3:
-					url = RDGenerics.ADPLink;
-					break;
-
-				case 10:
-					// Оставляем url пустым
-					break;
-
-				// Ссылки Лаборатории
-				case 11:
-				case 12:
-				case 13:
-					url = RDGenerics.GetCommunityLink ((uint)res - 11);
-					break;
-				}
-
-			// Запуск
-			if (string.IsNullOrWhiteSpace (url))
-				{
-				if (!await AndroidSupport.ShowMessage (Localization.GetText ("DevMessage"),
-					Localization.GetDefaultText (LzDefaultTextValues.Button_Yes),
-					Localization.GetDefaultText (LzDefaultTextValues.Button_Cancel)))
-					return false;
-
-				try
-					{
-					EmailMessage message = new EmailMessage
-						{
-						Subject = RDGenerics.LabMailCaption,
-						Body = "",
-						To = new List<string> () { RDGenerics.LabMailLink }
-						};
-					await Email.ComposeAsync (message);
-					}
-				catch
-					{
-					AndroidSupport.ShowBalloon
-						(Localization.GetDefaultText (LzDefaultTextValues.Message_EMailsNotAvailable), true);
-					}
-				}
-
-			else
-				{
-				try
-					{
-					await Launcher.OpenAsync (url);
-					}
-				catch
-					{
-					AndroidSupport.ShowBalloon
-						(Localization.GetDefaultText (LzDefaultTextValues.Message_BrowserNotAvailable), true);
-					}
-				}
-
-			// Успешно
-			return true;
+			await AndroidSupport.CallHelpMaterials (HelpMaterialsSets.HelpAndSupport);
 			}
 
 		// Изменение размера шрифта интерфейса
