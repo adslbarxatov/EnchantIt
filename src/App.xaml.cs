@@ -36,8 +36,8 @@ namespace RD_AAOW
 
 		// Фактор определения отклонения от нормы.
 		// Определён сейчас как сумма десяти максимальных (по практическим наблюдениям) отклонений (~ 1%),
-		// возникающих хотя бы в 59% случаев
-		private const double factor = 0.01 * countOfSummas * 0.59 * scaleSizeFactor;
+		// возникающих хотя бы в 55% случаев
+		private const double factor = 0.01 * countOfSummas * 0.55 * scaleSizeFactor;
 
 		// Минимальное количество срабатываний в ряд, необходимое для сертификации
 		private const uint certLimit = 3;
@@ -124,15 +124,15 @@ namespace RD_AAOW
 		private ContentPage solutionPage, aboutPage, ttm1Page, ttm2Page;
 		private const int pagesCount = 4;
 		private Label aboutLabel, measureLabel, resultsLabel, instructionsLabel,
-			space01, space02, resultsTTM1Label;
+			space01, space02, resultsTTM1Label, aboutFontSizeField;
 		private Label[] pixels = new Label[2];
+
 		private Xamarin.Forms.Button startButton, stopButton, shareButton, methodButton,
 			certButton, startTTM1Button, methodTTM1Button, resetTTM1Button,
-			startTTM2Button, stopTTM2Button, methodTTM2Button;
+			startTTM2Button, stopTTM2Button, methodTTM2Button, languageButton;
 		private Xamarin.Forms.ProgressBar[] scale = new Xamarin.Forms.ProgressBar[3],
 			factorScale = new Xamarin.Forms.ProgressBar[2];
 		private Xamarin.Forms.Editor messageTTM1Editor;
-		private Label[] pixels = new Label[2];
 
 #else
 
@@ -172,9 +172,9 @@ namespace RD_AAOW
 
 #if TTM
 			ttm1Page = AndroidSupport.ApplyPageSettings (MainPage, "TTM1Page",
-				Localization.GetText ("TTM1Page", al), solutionMasterBackColor);
+				Localization.GetText ("TTM1Page"), solutionMasterBackColor);
 			ttm2Page = AndroidSupport.ApplyPageSettings (MainPage, "TTM2Page",
-				Localization.GetText ("TTM2Page", al), solutionMasterBackColor);
+				Localization.GetText ("TTM2Page"), solutionMasterBackColor);
 #endif
 
 			#region Основная страница
@@ -268,6 +268,11 @@ namespace RD_AAOW
 			aboutFontSizeField = AndroidSupport.ApplyLabelSettings (aboutPage, "FontSizeField",
 				" ", ASLabelTypes.DefaultCenter);
 
+			AndroidSupport.ApplyLabelSettings (aboutPage, "HelpTextLabel",
+				RDGenerics.GetEncoding (SupportedEncodings.UTF8).
+				GetString ((byte[])RD_AAOW.Properties.Resources.ResourceManager.
+				GetObject (Localization.GetHelpFilePath ())), ASLabelTypes.SmallLeft);
+
 			FontSizeButton_Clicked (null, null);
 
 			#endregion
@@ -285,7 +290,8 @@ namespace RD_AAOW
 			AndroidSupport.ApplyButtonSettings (ttm1Page, "NightMode", ASButtonDefaultTypes.NightMode,
 				solutionFieldBackColor, SwitchNightMode);
 
-			resultsTTM1Label = AndroidSupport.ApplyLabelSettingsForKKT (ttm1Page, "Results", "", false, true);
+			resultsTTM1Label = AndroidSupport.ApplyLabelSettings (ttm1Page, "Results", "", ASLabelTypes.Field,
+				solutionMasterBackColor);
 			messageTTM1Editor = AndroidSupport.ApplyEditorSettings (ttm1Page, "Message", solutionFieldBackColor,
 				Keyboard.Text, 100, "", null, true);
 #endif
@@ -308,8 +314,8 @@ namespace RD_AAOW
 
 			for (int i = 0; i < pixels.Length; i++)
 				{
-				pixels[i] = AndroidSupport.ApplyResultLabelSettings (ttm2Page, "Pixels" + (i + 1).ToString (), " ",
-					solutionFieldBackColor, true);
+				pixels[i] = AndroidSupport.ApplyLabelSettings (ttm2Page, "Pixels" + (i + 1).ToString (), " ",
+					 ASLabelTypes.Field, solutionFieldBackColor);
 				pixels[i].TextType = TextType.Html;
 				pixels[i].HorizontalOptions = new LayoutOptions (LayoutAlignment.Center, false);
 				}
@@ -372,20 +378,12 @@ namespace RD_AAOW
 
 				await AndroidSupport.ShowMessage (Localization.GetText ("Tip00"),
 					Localization.GetDefaultText (LzDefaultTextValues.Button_OK));
-				}
-
-			if (AndroidSupport.AllowFontSizeTip)
-				{
-				await AndroidSupport.ShowMessage (
-					Localization.GetDefaultText (LzDefaultTextValues.Message_FontSizeAvailable),
-					Localization.GetDefaultText (LzDefaultTextValues.Button_OK));
-				}
 
 #if TTM
-			await aboutPage.DiplayAlert (ProgramDescription.AssemblyVisibleName,
-				Localization.GetText ("Tip02"),
-				Localization.GetDefaultText (LzDefaultTextValues.Button_OK));
+				await AndroidSupport.ShowMessage (Localization.GetText ("Tip02"),
+					Localization.GetDefaultText (LzDefaultTextValues.Button_OK));
 #endif
+				}
 			}
 
 		/// <summary>
@@ -792,6 +790,7 @@ namespace RD_AAOW
 				solutionPage.BackgroundColor =
 #if TTM
 					ttm1Page.BackgroundColor = ttm2Page.BackgroundColor = messageTTM1Editor.TextColor =
+					resultsTTM1Label.BackgroundColor =
 #endif
 					solutionMasterTextColor;
 				resultsLabel.TextColor =
@@ -807,6 +806,7 @@ namespace RD_AAOW
 				solutionPage.BackgroundColor =
 #if TTM
 					ttm1Page.BackgroundColor = ttm2Page.BackgroundColor = messageTTM1Editor.TextColor =
+					resultsTTM1Label.BackgroundColor =
 #endif
 					solutionMasterBackColor;
 				resultsLabel.TextColor =
@@ -893,24 +893,23 @@ namespace RD_AAOW
 
 			if (currentMethod == GenerationMethods.Core)
 				{
-				ttm = new TalkToMe (al);
+				ttm = new TalkToMe ();
 				}
 			else
 				{
 				if (!await InitTalkingFromWifi ())
 					return;
 
-				ttm = new TalkToMe (al, GetSeed, currentMethod == GenerationMethods.CorePlusWiFi);
+				ttm = new TalkToMe (GetSeed, currentMethod == GenerationMethods.CorePlusWiFi);
 				}
 
 			// Запрос предложения
 			resultsTTM1Label.Text = ("▲ " + messageTTM1Editor.Text + Localization.RNRN) + resultsTTM1Label.Text;
 			messageTTM1Editor.Text = "";
 
-			To ast.MakeText (Android.App.Application.Context, Localization.GetText ("GettingSentence", al) +
+			AndroidSupport.ShowBalloon (Localization.GetText ("GettingSentence") +
 				Localization.RN + "(" +
-				Localization.GetText ("Method" + ((uint)currentMethod).ToString ("D2"), al) + ")",
-				ToastLength.Long).Show ();
+				Localization.GetText ("Method" + ((uint)currentMethod).ToString ("D2")) + ")", true);
 
 			string sentence = await Task.Run<string> (ttm.GetNextSentence);
 			resultsTTM1Label.Text = ("▼ " + sentence + Localization.RNRN) + resultsTTM1Label.Text;
@@ -928,8 +927,7 @@ namespace RD_AAOW
 			int seed = await Task.Run<int> (GetSeed);
 			if (seed == 0)
 				{
-				To ast.MakeText (Android.App.Application.Context, Localization.GetText ("ConnectionLost", al),
-					ToastLength.Long).Show ();
+				AndroidSupport.ShowBalloon (Localization.GetText ("ConnectionLost"), true);
 
 				ChangeButtonsState (false, true);
 				return false;
@@ -941,10 +939,9 @@ namespace RD_AAOW
 		// Метод сбрасывает чат
 		private async void ResetTheChat (object sender, EventArgs e)
 			{
-			if (await ttm1Page.DiplayAlert (ProgramDescription.AssemblyTitle,
-								Localization.GetText ("ChatResetRequest", al),
-								Localization.GetText ("NextButton", al),
-								Localization.GetText ("CancelButton", al)))
+			if (await AndroidSupport.ShowMessage (Localization.GetText ("ChatResetRequest"),
+				Localization.GetDefaultText (LzDefaultTextValues.Button_Yes),
+				Localization.GetDefaultText (LzDefaultTextValues.Button_Cancel)))
 				resultsTTM1Label.Text = "";
 			}
 #endif
@@ -959,22 +956,22 @@ namespace RD_AAOW
 			{
 			ChangeButtonsState (true, true);
 
-			To ast.MakeText (Android.App.Application.Context, Localization.GetText ("StartingGeneration", al) +
+			AndroidSupport.ShowBalloon (Localization.GetText ("StartingGeneration") +
 				Localization.RN +
-				"(" + Localization.GetText ("Method" + ((uint)currentMethod).ToString ("D2"), al) + ")",
-				ToastLength.Long).Show ();
+				"(" + Localization.GetText ("Method" + ((uint)currentMethod).ToString ("D2")) + ")",
+				true);
 
 			// Инициализация потока
 			if (currentMethod == GenerationMethods.Core)
 				{
-				ttm = new TalkToMe (al);
+				ttm = new TalkToMe ();
 				}
 			else
 				{
 				if (!await InitTalkingFromWifi ())
 					return;
 
-				ttm = new TalkToMe (al, GetSeed, currentMethod == GenerationMethods.CorePlusWiFi);
+				ttm = new TalkToMe (GetSeed, currentMethod == GenerationMethods.CorePlusWiFi);
 				}
 
 			// Запуск

@@ -1,5 +1,10 @@
 PA detector: changes log
 
+Version 3.3:
+• “Talk to me” and “Show it to me” sections have been restored;
+• Xamarin support packages have been updated;
+• Fixed some graphical bugs
+
 Version 3.2.5:
 • Updates and fixes have been applied to some auxiliary functions
 
