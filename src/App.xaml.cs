@@ -123,7 +123,7 @@ namespace RD_AAOW
 
 		private ContentPage solutionPage, aboutPage, ttm1Page, ttm2Page;
 		private const int pagesCount = 4;
-		private Label aboutLabel, measureLabel, resultsLabel, instructionsLabel,
+		private Label aboutLabel, measureLabel, resultsLabel, /*instructionsLabel,*/
 			space01, space02, resultsTTM1Label, aboutFontSizeField;
 		private Label[] pixels = new Label[2];
 
