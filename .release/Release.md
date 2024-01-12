@@ -1,6 +1,6 @@
-_Changes for v 3.3.1_:
-- “Talk to me” and “Show it to me” sections have been restored;
+_Changes for v 3.3.3_:
+- The font size and scale are now independent from the system settings (old interface bug);
+- Core updates have been applied;
 - Xamarin support packages have been updated;
-- Fixed some graphical bugs;
-- Updates and fixes have been applied to some auxiliary functions;
-- New identity has been applied
+- “Talk to me” and “Show it to me” sections have been restored;
+- Updates and fixes have been applied to some auxiliary functions

@@ -1,5 +1,7 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Content.PM;
+using Android.Content.Res;
 using Android.OS;
 using Android.Views;
 
@@ -22,9 +24,31 @@ namespace RD_AAOW.Droid
 	public class MainActivity: global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 		{
 		/// <summary>
+		/// Принудительная установка масштаба шрифта
+		/// </summary>
+		/// <param name="base">Существующий набор параметров</param>
+		protected override void AttachBaseContext (Context @base)
+			{
+			if (baseContextOverriden)
+				{
+				base.AttachBaseContext (@base);
+				return;
+				}
+
+			Configuration overrideConfiguration = new Configuration ();
+			overrideConfiguration = @base.Resources.Configuration;
+			overrideConfiguration.FontScale = 0.9f;
+
+			Context context = @base.CreateConfigurationContext (overrideConfiguration);
+			baseContextOverriden = true;
+
+			base.AttachBaseContext (context);
+			}
+		private bool baseContextOverriden = false;
+
+		/// <summary>
 		/// Обработчик события создания экземпляра
 		/// </summary>
-		/// <param name="savedInstanceState"></param>
 		protected override void OnCreate (Bundle savedInstanceState)
 			{
 			TabLayoutResource = Resource.Layout.Tabbar;
