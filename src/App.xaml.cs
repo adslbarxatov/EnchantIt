@@ -1,5 +1,4 @@
 ﻿using Android.Net;
-using Android.Util;
 using Java.Security;
 using System;
 using System.Collections.Generic;
@@ -68,6 +67,8 @@ namespace RD_AAOW
 
 		private bool stopGeneration = false;
 		private double oldScale = 0, newScale = 0;
+
+		private RDAppStartupFlags flags;
 
 		// Множитель шкалы для регистратора отклонений ГПСЧ
 		private const double scaleSizeFactor = 8.0;
@@ -157,10 +158,11 @@ namespace RD_AAOW
 		/// <summary>
 		/// Конструктор. Точка входа приложения
 		/// </summary>
-		public App (bool Huawei)
+		public App (RDAppStartupFlags Flags)
 			{
 			// Инициализация
 			InitializeComponent ();
+			flags = Flags;
 
 			// Общая конструкция страниц приложения
 			MainPage = new MasterPage ();
@@ -246,6 +248,29 @@ namespace RD_AAOW
 			AndroidSupport.ApplyLabelSettings (aboutPage, "GenericSettingsLabel",
 				RDLocale.GetDefaultText (RDLDefaultTexts.Control_GenericSettings),
 				RDLabelTypes.HeaderLeft);
+
+			// Управление правами
+			Label allowServiceTip;
+			Button allowServiceButton;
+			if (!Flags.HasFlag (RDAppStartupFlags.CanWriteFiles))
+				{
+				allowServiceTip = AndroidSupport.ApplyLabelSettings (aboutPage, "AllowWritingTip",
+					RDLocale.GetDefaultText (RDLDefaultTexts.Message_ReadWritePermission), RDLabelTypes.ErrorTip);
+
+				allowServiceButton = AndroidSupport.ApplyButtonSettings (aboutPage, "AllowWritingButton",
+					RDLocale.GetDefaultText (RDLDefaultTexts.Button_Open), aboutFieldBackColor, CallAppSettings, false);
+				allowServiceButton.HorizontalOptions = LayoutOptions.Center;
+				}
+			else
+				{
+				allowServiceTip = AndroidSupport.ApplyLabelSettings (aboutPage, "AllowWritingTip",
+					" ", RDLabelTypes.Tip);
+				allowServiceTip.IsVisible = false;
+
+				allowServiceButton = AndroidSupport.ApplyButtonSettings (aboutPage, "AllowWritingButton",
+					" ", aboutFieldBackColor, null, false);
+				allowServiceButton.IsVisible = false;
+				}
 
 			// Кнопки управления
 			AndroidSupport.ApplyLabelSettings (aboutPage, "RestartTipLabel",
@@ -361,14 +386,15 @@ namespace RD_AAOW
 			countOfMatches = 0; // Признак отмены обновления при отсутствии результатов
 
 			// Отображение подсказок первого старта
-			ShowTips (Huawei);
+			ShowTips ();
 			}
 
 		// Метод отображает подсказки при первом запуске
-		private async void ShowTips (bool Huawei)
+		private async void ShowTips ()
 			{
 			// Контроль XPUN
-			await AndroidSupport.XPUNLoop (Huawei);
+			if (!flags.HasFlag (RDAppStartupFlags.Huawei))
+				await AndroidSupport.XPUNLoop ();
 
 			// Защита
 			if (firstStart)
@@ -409,6 +435,12 @@ namespace RD_AAOW
 #endif
 				}
 			catch { }
+			}
+
+		// Вызов настроек приложения (для Android 12 и выше)
+		private void CallAppSettings (object sender, EventArgs e)
+			{
+			AndroidSupport.CallAppSettings ();
 			}
 
 		#endregion

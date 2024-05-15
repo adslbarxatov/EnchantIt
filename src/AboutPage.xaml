@@ -17,6 +17,9 @@
 				<Button x:Name="ManualsButton" HorizontalOptions="Center" />
 				<Button x:Name="HelpButton" HorizontalOptions="Center" />
 
+				<Label x:Name="AllowWritingTip" HorizontalOptions="Center" />
+				<Button x:Name="AllowWritingButton" HorizontalOptions="Center" />
+
 				<BoxView VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="1" 
 					WidthRequest="200" Color="#606060" Margin="9" />
 

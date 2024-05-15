@@ -65,14 +65,17 @@ namespace RD_AAOW.Droid
 			// Запрет на переход в ждущий режим
 			this.Window.AddFlags (WindowManagerFlags.KeepScreenOn);
 
-#if HUAWEI
-			LoadApplication (new App (true));
-#else
-			LoadApplication (new App (false));
-#endif
+			/*#if HUAWEI
+						LoadApplication (new App (true));
+			#else
+						LoadApplication (new App (false));
+			#endif*/
+			RDAppStartupFlags flags = AndroidSupportX.GetAppStartupFlags (RDAppStartupFlags.Huawei |
+				RDAppStartupFlags.CanWriteFiles, this);
+			LoadApplication (new App (flags));
 			}
 
-		/// <summary>
+		/*/// <summary>
 		/// Запрос разрешений для приложения
 		/// </summary>
 		public override void OnRequestPermissionsResult (int requestCode, string[] permissions,
@@ -81,6 +84,6 @@ namespace RD_AAOW.Droid
 			Xamarin.Essentials.Platform.OnRequestPermissionsResult (requestCode, permissions, grantResults);
 
 			base.OnRequestPermissionsResult (requestCode, permissions, grantResults);
-			}
+			}*/
 		}
 	}
