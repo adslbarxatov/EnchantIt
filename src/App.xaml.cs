@@ -855,14 +855,22 @@ namespace RD_AAOW
 		// Метод формирует изображение сертификата
 		private async void CreateCertificate (object sender, EventArgs e)
 			{
-			// Контроль разрешений
-			await Xamarin.Essentials.Permissions.RequestAsync<Xamarin.Essentials.Permissions.StorageWrite> ();
+			// Защита
+			if (!flags.HasFlag (RDAppStartupFlags.CanWriteFiles))
+				{
+				await AndroidSupport.ShowMessage (RDLocale.GetDefaultText
+					(RDLDefaultTexts.Message_ReadWritePermission),
+					RDLocale.GetDefaultText (RDLDefaultTexts.Button_OK));
+				return;
+				}
+
+			/*await Xamarin.Essentials.Permissions.RequestAsync<Xamarin.Essentials.Permissions.StorageWrite> ();
 			if (await Xamarin.Essentials.Permissions.CheckStatusAsync<Xamarin.Essentials.Permissions.StorageWrite> () !=
 				PermissionStatus.Granted)
 				{
 				AndroidSupport.ShowBalloon (RDLocale.GetText ("SaveFileFailure"), true);
 				return;
-				}
+				}*/
 
 			// Сбор сведений
 			if (string.IsNullOrWhiteSpace (certName))

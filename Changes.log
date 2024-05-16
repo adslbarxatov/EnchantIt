@@ -1,6 +1,6 @@
 PA detector: changes log
 
-Version 3.5:
+Version 3.5.1:
 • Background service code has been reworked, a number of compatibility issues with Android 13 have been fixed;
 • App permissions checker has been rewritten;
 • Tips storage has been rewritten (may cause their repeating once more)

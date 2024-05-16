@@ -1,4 +1,4 @@
-_Changes for v 3.5_:
+_Changes for v 3.5.1_:
 - Background service code has been reworked, a number of compatibility issues with Android 13 have been fixed;
 - App permissions checker has been rewritten;
 - Tips storage has been rewritten (may cause their repeating once more);
