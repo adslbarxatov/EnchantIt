@@ -1,13 +1,10 @@
-﻿using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace RD_AAOW
+﻿namespace RD_AAOW
 	{
 	/// <summary>
 	/// Класс описывает страницу сведений о программе
 	/// </summary>
 	[XamlCompilation (XamlCompilationOptions.Compile)]
-	public partial class AboutPage:ContentPage
+	public partial class AboutPage: ContentPage
 		{
 		/// <summary>
 		/// Конструктор. Запускает страницу
