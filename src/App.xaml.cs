@@ -261,16 +261,16 @@ namespace RD_AAOW
 
 			startButton = AndroidSupport.ApplyButtonSettings (solutionPage, "Start",
 				RDDefaultButtons.Start, solutionFieldBackColor, StartGeneration);
-			startButton.Margin = new Thickness (3);
+			/*startButton.Margin = new Thickness  (3);*/
 
 			stopButton = AndroidSupport.ApplyButtonSettings (solutionPage, "Stop",
 				RDDefaultButtons.Stop, solutionFieldBackColor, StopGeneration);
 			stopButton.IsVisible = false;
-			stopButton.Margin = new Thickness (3);
+			/*stopButton.Margin = new Thickness  (3);*/
 
 			methodButton = AndroidSupport.ApplyButtonSettings (solutionPage, "Method",
 				RDDefaultButtons.Select, solutionFieldBackColor, SelectMethod);
-			methodButton.Margin = new Thickness (3);
+			/*methodButton.Margin = new Thickness  (3);*/
 
 			measureLabel = AndroidSupport.ApplyLabelSettings (solutionPage, "Measure", "",
 				RDLabelTypes.HeaderCenter);
@@ -295,19 +295,19 @@ namespace RD_AAOW
 
 			shareButton = AndroidSupport.ApplyButtonSettings (solutionPage, "ShareResults",
 				RDDefaultButtons.Share, solutionFieldBackColor, ShareResults);
-			shareButton.Margin = new Thickness (3);
+			/*shareButton.Margin = new Thickness  (3);*/
 
 			certButton = AndroidSupport.ApplyButtonSettings (solutionPage, "Certificate",
 				RDDefaultButtons.SpecialFour, solutionFieldBackColor, CreateCertificate);
-			certButton.Margin = new Thickness (3);
+			/*certButton.Margin = new Thickness  (3);*/
 
-			Button nmButton = AndroidSupport.ApplyButtonSettings (solutionPage, "NightMode",
+			/*Button nmButton =*/ AndroidSupport.ApplyButtonSettings (solutionPage, "NightMode",
 				RDDefaultButtons.NightMode, solutionFieldBackColor, SwitchNightMode);
-			nmButton.Margin = new Thickness (3);
+			/*nmButton.Margin = new Thickness  (3);*/
 
-			Button mnButton = AndroidSupport.ApplyButtonSettings (solutionPage, "Menu",
+			AndroidSupport.ApplyButtonSettings (solutionPage, "Menu",
 				RDDefaultButtons.Menu, solutionFieldBackColor, SelectPage);
-			mnButton.Margin = new Thickness (3);
+			/*mnButton.Margin = new Thickness  (3);*/
 
 			space01 = AndroidSupport.ApplyLabelSettings (solutionPage, "Space01", RDLocale.RN,
 				RDLabelTypes.DefaultCenter);
@@ -318,12 +318,6 @@ namespace RD_AAOW
 			#endregion
 
 			#region Страница «О программе»
-
-			/*try
-				{
-				firstStart = RDGenerics.GetAppSettingsValue (firstStartRegKey) == "";
-				}
-			catch { }*/
 
 			// Описание приложения
 			aboutLabel = AndroidSupport.ApplyLabelSettings (aboutPage, "AboutLabel",
@@ -400,15 +394,15 @@ namespace RD_AAOW
 
 			startTTM1Button = AndroidSupport.ApplyButtonSettings (ttm1Page, "Start",
 				RDDefaultButtons.Up, solutionFieldBackColor, StartTalking);
-			startTTM1Button.Margin = new Thickness (3);
+			/*startTTM1Button.Margin = new Thickness  (3);*/
 
 			methodTTM1Button = AndroidSupport.ApplyButtonSettings (ttm1Page, "Method",
 				RDDefaultButtons.Select, solutionFieldBackColor, SelectMethod);
-			methodTTM1Button.Margin = new Thickness (3);
+			/*methodTTM1Button.Margin = new Thickness  (3);*/
 
 			resetTTM1Button = AndroidSupport.ApplyButtonSettings (ttm1Page, "Reset",
 				RDDefaultButtons.Delete, solutionFieldBackColor, ResetTheChat);
-			resetTTM1Button.Margin = new Thickness (3);
+			/*resetTTM1Button.Margin = new Thickness  (3);*/
 
 			AndroidSupport.ApplyButtonSettings (ttm1Page, "NightMode", RDDefaultButtons.NightMode,
 				solutionFieldBackColor, SwitchNightMode);
@@ -424,18 +418,18 @@ namespace RD_AAOW
 
 			startTTM2Button = AndroidSupport.ApplyButtonSettings (ttm2Page, "Start",
 				RDDefaultButtons.Start, solutionFieldBackColor, StartTTM);
-			startTTM2Button.Margin = new Thickness (3);
+			/*startTTM2Button.Margin = new Thickness  (3);*/
 
 			stopTTM2Button = AndroidSupport.ApplyButtonSettings (ttm2Page, "Stop",
 				RDDefaultButtons.Stop, solutionFieldBackColor, StopTTM);
 			stopTTM2Button.IsVisible = false;
-			stopTTM2Button.Margin = new Thickness (3);
+			/*stopTTM2Button.Margin = new Thickness  (3);*/
 
 			methodTTM2Button = AndroidSupport.ApplyButtonSettings (ttm2Page, "Method",
 				RDDefaultButtons.Select, solutionFieldBackColor, SelectMethod);
 			AndroidSupport.ApplyButtonSettings (ttm2Page, "NightMode", RDDefaultButtons.NightMode,
 				solutionFieldBackColor, SwitchNightMode);
-			methodTTM2Button.Margin = new Thickness (3);
+			/*methodTTM2Button.Margin = new Thickness  (3);*/
 
 			for (int i = 0; i < pixels.Length; i++)
 				{

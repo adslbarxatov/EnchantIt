@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.RD_AAOW.EnchantIt"
-	android:installLocation="internalOnly" android:versionCode="600323" android:versionName="3.6">
+	android:installLocation="internalOnly" android:versionCode="600324" android:versionName="3.6.1">
 
 	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="34" />
 
@@ -9,4 +9,11 @@
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 	<application android:label="Paranormal activity detector" android:icon="@drawable/launcher_foreground" />
+
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.SENDTO" />
+			<data android:scheme="mailto" />
+		</intent>
+	</queries>
 </manifest>

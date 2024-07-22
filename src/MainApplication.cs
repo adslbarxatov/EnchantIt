@@ -3,7 +3,11 @@ using Android.Runtime;
 
 namespace RD_AAOW
 	{
-	[Application]
+#if DEBUG
+	[Application (Debuggable = true)]
+#else
+	[Application (Debuggable = false)]
+#endif
 	public class MainApplication: MauiApplication
 		{
 		public MainApplication (IntPtr handle, JniHandleOwnership ownership)
