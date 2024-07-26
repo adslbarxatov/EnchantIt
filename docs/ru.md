@@ -1,5 +1,5 @@
 # Paranormal activity detector: описание метода
-> **ƒ** &nbsp;RD AAOW FDL; 6.02.2024; 2:55
+> **ƒ** &nbsp;RD AAOW FDL; 27.07.2024; 3:53
 
 
 
@@ -8,8 +8,6 @@
 - [Предыстория проекта](#section-1)
 - [Принцип действия](#section-2)
 - [Заключение](#section-3)
-- [Видеоруководство](https://youtu.be/Dqcrs0F6Gq0)
-- [Ссылки для загрузки](https://adslbarxatov.github.io/DPArray/ru#pa-detector-enchant-it)
 - [English version](https://adslbarxatov.github.io/EnchantIt)
 
 ---

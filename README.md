@@ -8,6 +8,8 @@ The task of the app is to discover and mathematically confirm your (or somebody�
 to influence the surrounding reality not only by actions and words. How does it work?
 You can find an answer on the [page of the method’s description](https://adslbarxatov.github.io/EnchantIt)
 
+:warning: ***This repository is no longer updated***
+
 &nbsp;
 
 
@@ -20,15 +22,7 @@ Paranormal activity detector (ранее известный как EnchantIt) �
 способности влиять на окружающую действительность не только действиями и словами. Как это работает?
 Ответ можно найти на [странице описания метода](https://adslbarxatov.github.io/EnchantIt/ru)
 
-&nbsp;
-
-
-
-## Requirements / Требования
-
-- Android version requires OS 6.0 or newer. Interface languages: ru_ru, en_us;
-
-- Для Android-версии требуется ОС версии 6.0 или новее. Языки интерфейса: ru_ru, en_us;
+:warning: ***Данный репозиторий более не обновляется***
 
 &nbsp;
 
